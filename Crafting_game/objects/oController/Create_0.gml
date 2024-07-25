@@ -2,9 +2,9 @@
 // You can write your code in this editor
 // Resolution
 enum RES {
-	WIDTH = 320,
-	HEIGHT = 180,
-	SCALE = 4
+	WIDTH = 440,
+	HEIGHT = 260,
+	SCALE = 3
 	}
 
 // Create Camera

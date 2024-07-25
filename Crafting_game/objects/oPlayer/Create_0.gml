@@ -10,3 +10,6 @@ moveY = 0;
 
 // Create Pickaxe
 heldItem = instance_create_layer(x, y, "Instances", oPickaxe);
+
+// Inventoty 
+global.inventoryWood = 0;
