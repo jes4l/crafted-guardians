@@ -11,5 +11,15 @@ moveY = 0;
 // Create Pickaxe
 heldItem = instance_create_layer(x, y, "Instances", oPickaxe);
 
-// Inventoty 
-global.inventoryWood = 0;
+/// @description Initialize inventory grid
+
+// In your Create Event
+global.inventory = ds_grid_create(5, 1); // 5 cells (slots) in the inventory
+
+
+
+
+
+
+
+

@@ -1,27 +1,70 @@
-/// @description Insert description here
-// You can write your code in this editor
-// In the Draw GUI event of your object
+/// DRAW GUI EVENT
+var cellWidth = 35;
+var cellHeight = 50;
+var startX = 10;
+var startY = display_get_gui_height() - cellHeight - 10;
 
+for (var i = 0; i < 5; i++)
+{
+    var itemQuantity = global.inventory[# i, 0];
+    var itemSprite;
 
+    switch (i)
+    {
+        case 0: // Cell 1 (Wood)
+            itemSprite = sWood;
+            break;
+        case 1: // Cell 2 (Iron)
+            itemSprite = sIron;
+            break;
+        case 2: // Cell 3 (Brick)
+            itemSprite = sBrick;
+            break;
+        case 3: // Cell 4 (Gold)
+            itemSprite = sGold;
+            break;
+        case 4: // Cell 5 (Stone)
+            itemSprite = sStone;
+            break;
+        default:
+            itemSprite = sDefault;
+            break;
+    }
 
-var screen_width = display_get_gui_width();
-var screen_height = display_get_gui_height();
+    // Define the box's top-left and bottom-right coordinates
+    var box_x1 = startX + i * cellWidth;
+    var box_y1 = startY + 4;
+    var box_x2 = startX + (i + 1) * cellWidth;
+    var box_y2 = startY + cellHeight - 12 - 4;
 
-// Set the font size to a smaller value
+    // Center position for the sprite within the box
+    var box_center_x = (box_x1 + box_x2) / 2;
+    var box_center_y = (box_y1 + box_y2) / 2;
 
-draw_set_color(c_black);
-draw_set_halign(fa_left);
-draw_set_valign(fa_bottom);
-draw_set_font(fntGUI);
+    // Calculate the sprite's top-left corner to align its center with the box center
+    var itemX = box_center_x - sprite_get_width(itemSprite) / 2 + 6;
+    var itemY = box_center_y - sprite_get_height(itemSprite) / 2 + 6;
 
-// Display sWood sprite at the bottom left
-draw_sprite(sWood, 0, 10, screen_height - 20);
+    // Draw smaller grey box
+    draw_set_color(c_dkgray);
+    draw_rectangle(box_x1, box_y1, box_x2, box_y2, false);
 
-// Display Wood at the bottom left
-draw_text(5, screen_height, string(global.inventoryWood));
+    // Draw the item sprite inside the box
+    draw_sprite(itemSprite, 0, itemX, itemY);
 
-draw_set_color(c_white);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-audio_stop_all();
+    // Display the item quantity slightly lower
+    draw_set_color(c_black);
+    var quantityX = box_center_x + 2;
+    var quantityY = box_center_y - sprite_get_height(itemSprite) / 2 + 6;
 
+    draw_text(quantityX, quantityY, string(itemQuantity));
+
+    // Draw white outline around the smaller grey box
+    draw_set_color(c_gray);
+    var outline_thickness = 1;
+
+    draw_rectangle(box_x1 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y1 + outline_thickness, false); // Top
+    draw_rectangle(box_x1 - outline_thickness, box_y2 - outline_thickness, box_x2 + outline_thickness, box_y2 + outline_thickness, false); // Bottom
+    draw_rectangle(box_x1 - outline_thickness, box_y1 - outline_thickness, box_x1 + outline_thickness, box_y2 + outline_thickness, false); // Left
+    draw_rectangle(box_x2 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y2 + outline_thickness, false); // Right
+}

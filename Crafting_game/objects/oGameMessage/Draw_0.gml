@@ -22,4 +22,7 @@ if (timer_visible) {
     var center_y = y + (message_height - timer_height) / 2;
     
     draw_text(center_x, center_y, string(global.countdown)); // Draw the countdown timer centered in the message
+    
+    // Reset the font to the original font
+    draw_set_font(font);
 }
