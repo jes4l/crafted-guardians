@@ -2,7 +2,7 @@
 var cellWidth = 35;
 var cellHeight = 50;
 var startX = 10;
-var startY = display_get_gui_height() - cellHeight - 10;
+var startY = display_get_gui_height() - cellHeight - 10 + 20;
 
 for (var i = 0; i < 5; i++)
 {
@@ -52,15 +52,15 @@ for (var i = 0; i < 5; i++)
     // Draw the item sprite inside the box
     draw_sprite(itemSprite, 0, itemX, itemY);
 
-    // Display the item quantity slightly lower
-    draw_set_color(c_black);
+    // Display the item quantity slightly lower and to the right
+    draw_set_color(c_white);
     var quantityX = box_center_x + 2;
     var quantityY = box_center_y - sprite_get_height(itemSprite) / 2 + 6;
 
     draw_text(quantityX, quantityY, string(itemQuantity));
 
     // Draw white outline around the smaller grey box
-    draw_set_color(c_gray);
+    draw_set_color(c_white);
     var outline_thickness = 1;
 
     draw_rectangle(box_x1 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y1 + outline_thickness, false); // Top
