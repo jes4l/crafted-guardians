@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!visible) return 0;
+
 // Get input buttons
 var _right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 var _left = keyboard_check(vk_left) or keyboard_check(ord("A"));
@@ -64,3 +66,28 @@ if (moveX != 0 && sign(moveX) != _signMouse) {
 else {
 	image_speed = 1;
 }
+
+//portal stuff
+var pad, dest;
+pad = instance_place(x,y,oPad);
+
+if(place_meeting(x,y,pad)){
+	if(keyboard_check_pressed(vk_up) or keyboard_check(ord("W"))){
+		
+		for(i=0; i<instance_number(oDest); i++){
+			dest = instance_find(oDest, i);
+			
+			if(pad.index == dest.index){
+				
+
+				effect = instance_create_depth(x,y,-1,oEffect);
+				effect.target = dest;
+				visible = false;
+				break;
+			}
+		}
+	}
+}
+			
+
+
