@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oIron",
+  "%Name":"oLoss",
   "eventList":[],
   "managed":true,
-  "name":"oIron",
+  "name":"oLoss",
   "overriddenProperties":[],
   "parent":{
-    "name":"world",
-    "path":"folders/Objects/world.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sIron",
-    "path":"sprites/sIron/sIron.yy",
+    "name":"sLoss",
+    "path":"sprites/sLoss/sLoss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

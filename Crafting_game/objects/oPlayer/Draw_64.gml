@@ -15,7 +15,7 @@ for (var i = 0; i < 5; i++)
             itemSprite = sWood;
             break;
         case 1: // Cell 2 (Iron)
-            itemSprite = sIron;
+            itemSprite = sKey;
             break;
         case 2: // Cell 3 (Brick)
             itemSprite = sBrick;
