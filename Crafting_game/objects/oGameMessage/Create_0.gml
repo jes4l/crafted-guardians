@@ -1,5 +1,5 @@
 // Create event
-message = "Mine Materials to Build Towers to Destroy the Enemies";
+message = "Mine Materials, Build Towers,\n      Destroy the Enemies"; // Use \n for new line
 message_visible = true;
 timer_visible = false;
 alarm[0] = room_speed * 3; // Set alarm to 3 seconds for the message
