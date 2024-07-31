@@ -4,7 +4,7 @@ var coin_text_x = coin_x + 20;
 
 draw_set_color(c_black);
 draw_sprite(sCoin, 0, coin_x, coin_y);
-draw_text(coin_text_x, coin_y, "x " + string(global.coins));
+draw_text(coin_text_x, coin_y, string(global.coins));
 
 draw_text(10, 30, "Lvl: " + string(global.level));
 draw_set_color(c_white);

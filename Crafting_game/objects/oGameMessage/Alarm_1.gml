@@ -1,4 +1,3 @@
-// Alarm[1] event
 global.countdown -= 1;
 
 if (global.countdown >= 0) {

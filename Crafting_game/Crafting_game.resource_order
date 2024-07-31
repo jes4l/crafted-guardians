@@ -37,6 +37,7 @@
     {"name":"oLoss","order":9,"path":"objects/oLoss/oLoss.yy",},
     {"name":"oPickaxe","order":3,"path":"objects/oPickaxe/oPickaxe.yy",},
     {"name":"oReg","order":7,"path":"objects/oReg/oReg.yy",},
+    {"name":"oShop","order":10,"path":"objects/oShop/oShop.yy",},
     {"name":"oSpawn","order":5,"path":"objects/oSpawn/oSpawn.yy",},
     {"name":"oStone","order":6,"path":"objects/oStone/oStone.yy",},
     {"name":"oTower1C","order":1,"path":"objects/oTower1C/oTower1C.yy",},

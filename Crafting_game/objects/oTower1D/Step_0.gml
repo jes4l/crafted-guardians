@@ -4,5 +4,8 @@
 x = mouse_x;
 y = mouse_y;
 
-if(place_meeting(x,y,oReg) or place_meeting(x,y,oTowerParent)) col = c_red;
-else col = c_white
+if (place_meeting(x, y, oReg) || place_meeting(x, y, oTowerParent) || place_meeting(x, y, oShop) || place_meeting(x, y, oTree) || place_meeting(x, y, oBush)) {
+    col = c_red;
+} else {
+    col = c_white;
+}

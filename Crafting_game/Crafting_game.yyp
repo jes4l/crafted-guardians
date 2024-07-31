@@ -58,6 +58,7 @@
     {"id":{"name":"oPickaxe","path":"objects/oPickaxe/oPickaxe.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oReg","path":"objects/oReg/oReg.yy",},},
+    {"id":{"name":"oShop","path":"objects/oShop/oShop.yy",},},
     {"id":{"name":"oSpawn","path":"objects/oSpawn/oSpawn.yy",},},
     {"id":{"name":"oStone","path":"objects/oStone/oStone.yy",},},
     {"id":{"name":"oTower1","path":"objects/oTower1/oTower1.yy",},},

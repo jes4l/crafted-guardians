@@ -1,13 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-if(instance_number(oEnemy) <= 0) 
-{
+if (global.countdown <= 0 && instance_number(oEnemy) <= 0) {
     spawn_count = 0;
     spawn_amount++;
     global.level++;
 
-    // Increase HP, speed and decrease spawn rate
+    // Increase HP, speed, and decrease spawn rate
     global.hp += 10 * ln(1 + global.level / 10.0);
     global.spd += 0.1 * ln(1 + global.level / 10.0);
     spawn_rate -= 2.5 / (1 + global.level / 10.0);
