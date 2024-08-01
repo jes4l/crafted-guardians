@@ -83,6 +83,7 @@
     {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},},
     {"id":{"name":"sDest","path":"sprites/sDest/sDest.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
+    {"id":{"name":"sEnemyBoss","path":"sprites/sEnemyBoss/sEnemyBoss.yy",},},
     {"id":{"name":"sGold","path":"sprites/sGold/sGold.yy",},},
     {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},},
     {"id":{"name":"sKey","path":"sprites/sKey/sKey.yy",},},

@@ -59,6 +59,7 @@
     {"name":"sCollision","order":3,"path":"sprites/sCollision/sCollision.yy",},
     {"name":"sDest","order":19,"path":"sprites/sDest/sDest.yy",},
     {"name":"sEnemy","order":10,"path":"sprites/sEnemy/sEnemy.yy",},
+    {"name":"sEnemyBoss","order":23,"path":"sprites/sEnemyBoss/sEnemyBoss.yy",},
     {"name":"sGold","order":14,"path":"sprites/sGold/sGold.yy",},
     {"name":"sHeart","order":21,"path":"sprites/sHeart/sHeart.yy",},
     {"name":"sKey","order":20,"path":"sprites/sKey/sKey.yy",},

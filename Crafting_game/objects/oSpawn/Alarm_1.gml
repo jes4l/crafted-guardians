@@ -2,12 +2,9 @@ if (global.countdown <= 0 && instance_number(oEnemy) <= 0) {
     spawn_count = 0;
     spawn_amount++;
     global.level++;
-
-    // Increase HP, speed, and decrease spawn rate
-    global.hp += 10 * ln(1 + global.level / 10.0);
-    global.spd += 0.1 * ln(1 + global.level / 10.0);
-    spawn_rate -= 2.5 / (1 + global.level / 10.0);
-
+    global.hp += 10;
+    global.spd += 0.1;
+    spawn_rate = max(1, spawn_rate - 2.5); // Prevent spawn_rate from going negative
     alarm[0] = spawn_rate;
 }
 
