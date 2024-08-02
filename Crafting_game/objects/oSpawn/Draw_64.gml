@@ -17,4 +17,12 @@ var heart_spacing = 20;
 for (var i = 0; i < global.life; i++) {
     draw_sprite(sHeart, 0, heart_x + i * heart_spacing, heart_y);
 }
+
+// Display countdown
+if (global.countdown > 0) {
+	draw_set_font(fntGUI_large);
+    draw_text(210, 70, string(global.countdown));
+	draw_set_font(-1);
+}
+
 draw_set_font(-1);

@@ -22,3 +22,6 @@ spawn_count_boss = 0;
 spawn_rate_boss = 1 * room_speed;
 enemies_destroyed = 0;
 
+// Countdown
+global.countdown = 5;
+alarm[2] = room_speed; // Set alarm[2] to handle the countdown
