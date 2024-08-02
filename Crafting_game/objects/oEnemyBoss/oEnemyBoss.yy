@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemy",
+  "%Name":"oEnemyBoss",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,7 +9,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oLoss","path":"objects/oLoss/oLoss.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemy",
+  "name":"oEnemyBoss",
   "overriddenProperties":[],
   "parent":{
     "name":"Tower",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemy",
-    "path":"sprites/sEnemy/sEnemy.yy",
+    "name":"sEnemyBoss",
+    "path":"sprites/sEnemyBoss/sEnemyBoss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

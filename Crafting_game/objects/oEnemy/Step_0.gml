@@ -1,9 +1,7 @@
 if (hp <= 0) {
-    instance_destroy();
-}
-
-if(global.life <= 0) {
-    if (alarm[0] == -1) {
-        alarm[0] = 30;
+    // Increase the enemies_destroyed count in oSpawn
+    with (oSpawn) {
+        enemies_destroyed++;
     }
+    instance_destroy();
 }

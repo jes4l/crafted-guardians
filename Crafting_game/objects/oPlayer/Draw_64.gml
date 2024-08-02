@@ -1,4 +1,5 @@
 /// DRAW GUI EVENT
+draw_set_font(fntGUI);
 var cellWidth = 35;
 var cellHeight = 50;
 var startX = 10;
@@ -68,3 +69,4 @@ for (var i = 0; i < 5; i++)
     draw_rectangle(box_x1 - outline_thickness, box_y1 - outline_thickness, box_x1 + outline_thickness, box_y2 + outline_thickness, false); // Left
     draw_rectangle(box_x2 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y2 + outline_thickness, false); // Right
 }
+draw_set_font(-1);

@@ -1,3 +1,4 @@
+draw_set_font(fntGUI);
 var coin_x = 10;
 var coin_y = 10;
 var coin_text_x = coin_x + 20;
@@ -16,3 +17,4 @@ var heart_spacing = 20;
 for (var i = 0; i < global.life; i++) {
     draw_sprite(sHeart, 0, heart_x + i * heart_spacing, heart_y);
 }
+draw_set_font(-1);

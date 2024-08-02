@@ -1,4 +1,4 @@
-// Draw event
+/*// Draw event
 draw_set_color(c_white); // Set the color to black
 
 // Adjust the y position for the message
@@ -30,3 +30,4 @@ if (timer_visible) {
     // Reset the font to the original font
     draw_set_font(font);
 }
+*/

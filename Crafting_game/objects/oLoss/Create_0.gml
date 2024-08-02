@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rmEnd);
+timer = 0;
+cost_key = 1;

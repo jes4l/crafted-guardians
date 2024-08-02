@@ -31,6 +31,7 @@
     {"name":"oDest","order":1,"path":"objects/oDest/oDest.yy",},
     {"name":"oEffect","order":2,"path":"objects/oEffect/oEffect.yy",},
     {"name":"oEnemy","order":4,"path":"objects/oEnemy/oEnemy.yy",},
+    {"name":"oEnemyBoss","order":7,"path":"objects/oEnemyBoss/oEnemyBoss.yy",},
     {"name":"oGameMessage","order":5,"path":"objects/oGameMessage/oGameMessage.yy",},
     {"name":"oGold","order":8,"path":"objects/oGold/oGold.yy",},
     {"name":"oKey","order":9,"path":"objects/oKey/oKey.yy",},

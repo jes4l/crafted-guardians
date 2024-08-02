@@ -50,6 +50,7 @@
     {"id":{"name":"oDest","path":"objects/oDest/oDest.yy",},},
     {"id":{"name":"oEffect","path":"objects/oEffect/oEffect.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
+    {"id":{"name":"oEnemyBoss","path":"objects/oEnemyBoss/oEnemyBoss.yy",},},
     {"id":{"name":"oGameMessage","path":"objects/oGameMessage/oGameMessage.yy",},},
     {"id":{"name":"oGold","path":"objects/oGold/oGold.yy",},},
     {"id":{"name":"oKey","path":"objects/oKey/oKey.yy",},},
