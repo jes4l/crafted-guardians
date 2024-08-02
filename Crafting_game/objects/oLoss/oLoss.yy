@@ -11,8 +11,8 @@
   "name":"oLoss",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Tower",
+    "path":"folders/Objects/Tower.yy",
   },
   "parentObjectId":null,
   "persistent":false,

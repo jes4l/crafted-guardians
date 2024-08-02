@@ -1,40 +1,38 @@
-function CostDisplay() {
-    var tower = instance_position(mouse_x, mouse_y, oTower1C);
-    
-    if (tower != noone) {
-        var tower_center_x = tower.x;
-        var tower_top_y = tower.y - tower.sprite_height / 2; // Get the top of the tower
+// CostDisplay Function
+function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, sprite) {
+    if (mouse_x > x - sprite_width / 2 && mouse_x < x + sprite_width / 2 &&
+        mouse_y > y - sprite_height / 2 && mouse_y < y + sprite_height / 2) {
         
-        var cost_wood = string(tower.cost_wood);
-        var cost_stone = string(tower.cost_stone);
-
-        var text_wood_width = string_width(cost_wood);
-        var text_stone_width = string_width(cost_stone);
-        var sprite_wood_width = sprite_get_width(sWood);
-        var sprite_stone_width = sprite_get_width(sStone);
-        var sprite_wood_height = sprite_get_height(sWood);
-        var sprite_stone_height = sprite_get_height(sStone);
-
-        // Calculate total width for proper alignment
-        var total_width = text_wood_width + sprite_wood_width + 10 + text_stone_width + sprite_stone_width + 10; // Add spacing
-
-        // Define an offset value
-        var offset_horizontal = 7; // Example offset value; adjust as needed
-		var offset_vertical = 5;
-        // Calculate starting position (centered horizontally over the tower with offset)
-        var draw_x = tower_center_x - total_width / 2 + offset_horizontal;
-        var draw_y = tower_top_y - max(sprite_wood_height, sprite_stone_height) - 5 + offset_vertical; // Adjust to be above the top of the tower
-
-        // Draw wood cost and sprite
-        draw_set_color(c_black);
-        draw_text(draw_x, draw_y + (sprite_wood_height - string_height(cost_wood)) / 2, cost_wood);
-        draw_sprite(sWood, 0, draw_x + text_wood_width + 5, draw_y + (sprite_wood_height / 2));
-
-        // Calculate position for stone cost and sprite
-        var stone_x = draw_x + text_wood_width + sprite_wood_width + 10;
-        draw_text(stone_x, draw_y + (sprite_stone_height - string_height(cost_stone)) / 2, cost_stone);
-        draw_sprite(sStone, 0, stone_x + text_stone_width + 5, draw_y + (sprite_stone_height / 2));
-
-        draw_set_color(c_white);
+        var y_offset = y - sprite_height / 2;
+        var x_offset = x + sprite_width / 2 + 10; // Adjust the x_offset to the right-hand side
+        var text_y_offset = -11; // Adjust this value to bring the text higher up
+        var text_x_offset = + 10; // Adjust this value to bring the text closer to the sprite
+        
+        // Display the costs with corresponding item sprites on the right-hand side of the object
+        if (cost_wood > 0) {
+            draw_sprite(sWood, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_wood));
+            y_offset += 20;
+        }
+        if (cost_stone > 0) {
+            draw_sprite(sStone, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_stone));
+            y_offset += 20;
+        }
+        if (cost_key > 0) {
+            draw_sprite(sKey, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_key));
+            y_offset += 20;
+        }
+        if (cost_brick > 0) {
+            draw_sprite(sBrick, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_brick));
+            y_offset += 20;
+        }
+        if (cost_gold > 0) {
+            draw_sprite(sGold, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_gold));
+            y_offset += 20;
+        }
     }
 }

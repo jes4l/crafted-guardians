@@ -37,7 +37,7 @@
     {"name":"oEnemyBoss","order":7,"path":"objects/oEnemyBoss/oEnemyBoss.yy",},
     {"name":"oGold","order":8,"path":"objects/oGold/oGold.yy",},
     {"name":"oKey","order":9,"path":"objects/oKey/oKey.yy",},
-    {"name":"oLoss","order":9,"path":"objects/oLoss/oLoss.yy",},
+    {"name":"oLoss","order":8,"path":"objects/oLoss/oLoss.yy",},
     {"name":"oPickaxe","order":3,"path":"objects/oPickaxe/oPickaxe.yy",},
     {"name":"oReg","order":7,"path":"objects/oReg/oReg.yy",},
     {"name":"oShop","order":10,"path":"objects/oShop/oShop.yy",},
