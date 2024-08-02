@@ -34,6 +34,22 @@ if (CollisionScript(x, y + moveY)) {
 	moveY = 0;
 }
 
+if (LossTile(x + moveX, y)) {
+	while (!LossTile(x + sign(moveX), y)){
+		x += sign(moveX);
+	}
+	
+	moveX = 0;
+}
+
+if (LossTile(x, y + moveY)) {
+	while (!LossTile(x, y + sign(moveY))){
+		y += sign(moveY);
+	}
+	
+	moveY = 0;
+}
+
 
 // Move instance
 x += moveX;

@@ -54,6 +54,7 @@
     {"name":"rmEnd","order":3,"path":"rooms/rmEnd/rmEnd.yy",},
     {"name":"rmInit","order":1,"path":"rooms/rmInit/rmInit.yy",},
     {"name":"CostDisplay","order":2,"path":"scripts/CostDisplay/CostDisplay.yy",},
+    {"name":"LossTile","order":4,"path":"scripts/LossTile/LossTile.yy",},
     {"name":"mouseOver","order":1,"path":"scripts/mouseOver/mouseOver.yy",},
     {"name":"telePart","order":3,"path":"scripts/telePart/telePart.yy",},
     {"name":"sBackground","order":1,"path":"sprites/sBackground/sBackground.yy",},

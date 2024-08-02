@@ -78,6 +78,7 @@
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"id":{"name":"CollisionScript","path":"scripts/CollisionScript/CollisionScript.yy",},},
     {"id":{"name":"CostDisplay","path":"scripts/CostDisplay/CostDisplay.yy",},},
+    {"id":{"name":"LossTile","path":"scripts/LossTile/LossTile.yy",},},
     {"id":{"name":"mouseOver","path":"scripts/mouseOver/mouseOver.yy",},},
     {"id":{"name":"telePart","path":"scripts/telePart/telePart.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
