@@ -1,5 +1,4 @@
 spawn_amount = 5;
-enemies_needed_for_boss = 5;
 spawn_count = 0;
 spawn_rate = 1 * room_speed;
 alarm[0] = 1;
@@ -20,8 +19,8 @@ global.spd_boss = 1.5;
 spawn_amount_boss = 1;
 spawn_count_boss = 0;
 spawn_rate_boss = 1 * room_speed;
-enemies_destroyed = 0;
 
 // Countdown
-global.countdown = 5;
-alarm[2] = room_speed; // Set alarm[2] to handle the countdown
+global.countdown = 10;
+alarm[2] = room_speed;
+boss_spawned = false;

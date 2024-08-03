@@ -1,4 +1,3 @@
-/// @description Destroy instance if player is near and left pressed
 
 // Check distance to player
 var _dist = distance_to_object(oPlayer);

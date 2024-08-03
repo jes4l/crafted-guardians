@@ -1,7 +1,6 @@
-// OSTONE COLLISION EVENT
 instance_destroy(other);
-var itemType = "Stone"; // Change this based on the item type
-var cellIndex = 4; // Cell 5 (adjust as needed)
+var itemType = "Stone";
+var cellIndex = 4; // Cell 5
 
 // Increment the quantity in the inventory cell
 global.inventory[# cellIndex, 0] += 1;

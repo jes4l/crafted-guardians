@@ -1,7 +1,6 @@
-// OGOLD COLLISION EVENT
 instance_destroy(other);
-var itemType = "Gold"; // Change this based on the item type
-var cellIndex = 3; // Cell 4 (adjust as needed)
+var itemType = "Gold";
+var cellIndex = 3; // Cell 4
 
 // Increment the quantity in the inventory cell
 global.inventory[# cellIndex, 0] += 1;

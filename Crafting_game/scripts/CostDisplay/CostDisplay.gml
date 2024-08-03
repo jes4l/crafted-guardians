@@ -1,16 +1,14 @@
-// CostDisplay Function
 function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cost_coin, sprite) {
-    // Draw the instance itself first
-	
+
     draw_self();
     
     if (mouse_x > x - sprite_width / 2 && mouse_x < x + sprite_width / 2 &&
         mouse_y > y - sprite_height / 2 && mouse_y < y + sprite_height / 2) {
         
         var y_offset = y - sprite_height / 2;
-        var x_offset = x + sprite_width / 2 + 10; // Adjust the x_offset to the right-hand side
-        var text_y_offset = -11; // Adjust this value to bring the text higher up
-        var text_x_offset = + 10; // Adjust this value to bring the text closer to the sprite
+        var x_offset = x + sprite_width / 2 + 10;
+        var text_y_offset = -11;
+        var text_x_offset = + 10;
         
         // Display the costs with corresponding item sprites on the right-hand side of the object
         if (cost_wood > 0) {

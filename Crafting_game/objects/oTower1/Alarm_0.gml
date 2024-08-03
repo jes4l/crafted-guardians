@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-/// @description Insert description here
-// You can write your code in this editor
 if(instance_exists(objectToShoot))
 {
 var bullet = instance_create_depth(x,y,-9,oBullet);

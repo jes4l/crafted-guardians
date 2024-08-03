@@ -1,5 +1,3 @@
-// oEffect step event
-// oEffect step event
 part_particles_create(global.Sname, x, y, global.Particle1, 1);
 
 

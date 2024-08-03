@@ -1,4 +1,3 @@
-// telePart script
 function telePart() {
     // Get the layer ID
     var layer_id = layer_get_id("Instances");

@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 rotations = lerp(rotations, 45, 0.1);
 
 image_angle = rotations * oPlayer.image_xscale;

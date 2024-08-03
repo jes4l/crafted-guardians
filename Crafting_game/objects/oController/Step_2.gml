@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
 var _playerExists = instance_exists(oPlayer);
 var _heldItem = noone;
 

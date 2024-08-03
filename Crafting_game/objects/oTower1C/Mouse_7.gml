@@ -1,8 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-/// @description Insert description here
-// You can write your code in this editor
-
 var _dist = distance_to_object(oPlayer);
 
 if (_dist < other.breakDistance) {
@@ -13,7 +8,7 @@ if (_dist < other.breakDistance) {
 		
     if(global.inventory[# 0, 0] >= cost_wood) {
         instance_create_depth(mouse_x, mouse_y, -9, oTower1D);
-        global.inventory[# 0, 0] -= cost_wood; // Deduct wood
+        global.inventory[# 0, 0] -= cost_wood;
     }
 }
 }

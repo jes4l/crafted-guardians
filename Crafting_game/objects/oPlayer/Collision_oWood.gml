@@ -1,7 +1,6 @@
-// OWOOD COLLISION EVENT
 instance_destroy(other);
-var itemType = "Wood"; // Change this based on the item type
-var cellIndex = 0; // Cell 1 (adjust as needed)
+var itemType = "Wood";
+var cellIndex = 0; // Cell 1
 
 // Increment the quantity in the inventory cell
 global.inventory[# cellIndex, 0] += 1;

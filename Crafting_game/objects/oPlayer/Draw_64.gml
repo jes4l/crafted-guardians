@@ -1,4 +1,3 @@
-/// DRAW GUI EVENT
 draw_set_font(fntGUI);
 var cellWidth = 35;
 var cellHeight = 50;

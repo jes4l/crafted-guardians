@@ -1,5 +1,3 @@
-// Draw Event
-draw_self(); // Draw the sprite of the item
+draw_self();
 
-// Call CostDisplay to show the cost if mouse is over
 CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cost_coin, sprite_index);
