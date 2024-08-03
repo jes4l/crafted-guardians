@@ -1,5 +1,5 @@
-spawn_amount = 3;
-enemies_needed_for_boss = 3;
+spawn_amount = 5;
+enemies_needed_for_boss = 5;
 spawn_count = 0;
 spawn_rate = 1 * room_speed;
 alarm[0] = 1;
