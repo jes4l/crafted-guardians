@@ -1,4 +1,7 @@
 instance_destroy();
 global.life -= 1;
-global.coins -= 10;
-global.coins -= 50;
+if (global.coins >= 60) {
+    global.coins -= 60;
+} else {
+    global.coins = 0;
+}

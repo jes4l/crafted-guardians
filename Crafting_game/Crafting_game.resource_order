@@ -40,7 +40,6 @@
     {"name":"oLoss","order":8,"path":"objects/oLoss/oLoss.yy",},
     {"name":"oPickaxe","order":3,"path":"objects/oPickaxe/oPickaxe.yy",},
     {"name":"oReg","order":7,"path":"objects/oReg/oReg.yy",},
-    {"name":"oShop","order":10,"path":"objects/oShop/oShop.yy",},
     {"name":"oSpawn","order":5,"path":"objects/oSpawn/oSpawn.yy",},
     {"name":"oStartMessage","order":10,"path":"objects/oStartMessage/oStartMessage.yy",},
     {"name":"oStone","order":6,"path":"objects/oStone/oStone.yy",},

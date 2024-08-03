@@ -1,5 +1,9 @@
 // CostDisplay Function
-function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, sprite) {
+function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cost_coin, sprite) {
+    // Draw the instance itself first
+	
+    draw_self();
+    
     if (mouse_x > x - sprite_width / 2 && mouse_x < x + sprite_width / 2 &&
         mouse_y > y - sprite_height / 2 && mouse_y < y + sprite_height / 2) {
         
@@ -32,6 +36,11 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, spr
         if (cost_gold > 0) {
             draw_sprite(sGold, 0, x_offset, y_offset);
             draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_gold));
+            y_offset += 20;
+        }
+        if (cost_coin > 0) {
+            draw_sprite(sCoin, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_coin));
             y_offset += 20;
         }
     }

@@ -15,7 +15,7 @@ global.hp = 50;
 global.spd = 1;
 
 // oEnemyBoss
-global.hp_boss = 100;
+global.hp_boss = 200;
 global.spd_boss = 1.5;
 spawn_amount_boss = 1;
 spawn_count_boss = 0;

@@ -85,25 +85,27 @@ else {
 
 //portal stuff
 var pad, dest;
-pad = instance_place(x,y,oPad);
+pad = instance_place(x, y, oPad);
 
-if(place_meeting(x,y,pad)){
-	if(keyboard_check_pressed(vk_up) or keyboard_check(ord("W"))){
-		
-		for(i=0; i<instance_number(oDest); i++){
-			dest = instance_find(oDest, i);
-			
-			if(pad.index == dest.index){
-				
+if (place_meeting(x, y, pad)) {
+    if (keyboard_check_pressed(vk_up) or keyboard_check(ord("W"))) {
+        if (global.coins >= 150) { // Check if global.coins is greater than or equal to 100
+            global.coins -= 150;
+            for (i = 0; i < instance_number(oDest); i++) {
+                dest = instance_find(oDest, i);
 
-				effect = instance_create_depth(x,y,-1,oEffect);
-				effect.target = dest;
-				visible = false;
-				break;
-			}
-		}
-	}
+                if (pad.index == dest.index) {
+                    effect = instance_create_depth(x, y, -1, oEffect);
+                    effect.target = dest;
+                    visible = false;
+                    break;
+                }
+            }
+        }
+    }
 }
+
+
 			
 
 

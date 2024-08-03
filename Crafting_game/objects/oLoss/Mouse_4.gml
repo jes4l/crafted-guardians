@@ -9,6 +9,7 @@ if (_dist < other.breakDistance) {
     if (global.inventory[# 1, 0] >= cost_key) {
         // Deduct the cost and destroy the instance
         global.inventory[# 1, 0] -= cost_key;
+		global.level++;
         instance_destroy();
     }
 }
