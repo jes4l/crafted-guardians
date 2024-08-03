@@ -86,7 +86,7 @@ pad = instance_place(x, y, oPad);
 
 if (place_meeting(x, y, pad)) {
     if (keyboard_check_pressed(vk_up) or keyboard_check(ord("W"))) {
-        if (global.coins >= 150) { // Check if global.coins is greater than or equal to 100
+        if (global.coins >= 150) { // Check if global.coins is greater than or equal to 150
             global.coins -= 150;
             for (i = 0; i < instance_number(oDest); i++) {
                 dest = instance_find(oDest, i);
@@ -98,6 +98,11 @@ if (place_meeting(x, y, pad)) {
                     break;
                 }
             }
+        } else {
+            // Set error message on oPlayer
+            oPlayer.message = "Not enough money to travel";
+            oPlayer.alarm[0] = room_speed * 2; // Set the alarm to clear the message after 2 seconds
+            show_debug_message("Message set: " + oPlayer.message);
         }
     }
 }

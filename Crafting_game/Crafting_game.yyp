@@ -81,6 +81,8 @@
     {"id":{"name":"LossTile","path":"scripts/LossTile/LossTile.yy",},},
     {"id":{"name":"mouseOver","path":"scripts/mouseOver/mouseOver.yy",},},
     {"id":{"name":"telePart","path":"scripts/telePart/telePart.yy",},},
+    {"id":{"name":"snd_AmberSwarbrickAHHHHH","path":"sounds/snd_AmberSwarbrickAHHHHH/snd_AmberSwarbrickAHHHHH.yy",},},
+    {"id":{"name":"snd_TonyClarkHades","path":"sounds/snd_TonyClarkHades/snd_TonyClarkHades.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBrick","path":"sprites/sBrick/sBrick.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},

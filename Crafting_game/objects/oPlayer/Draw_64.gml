@@ -1,4 +1,5 @@
 draw_set_font(fntGUI);
+// In oPlayer Draw GUI event
 var cellWidth = 35;
 var cellHeight = 50;
 var startX = 10;
