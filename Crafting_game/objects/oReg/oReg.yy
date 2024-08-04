@@ -6,8 +6,8 @@
   "name":"oReg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"LossTile",
+    "path":"folders/Objects/TowerDefense/LossTile.yy",
   },
   "parentObjectId":null,
   "persistent":false,

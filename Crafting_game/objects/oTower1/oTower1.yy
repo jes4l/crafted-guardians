@@ -12,8 +12,8 @@
   "name":"oTower1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower",
-    "path":"folders/Objects/Tower.yy",
+    "name":"Tower1",
+    "path":"folders/Objects/TowerDefense/Tower/Tower1.yy",
   },
   "parentObjectId":{
     "name":"oTowerParent",

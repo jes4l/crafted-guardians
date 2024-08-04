@@ -6,8 +6,8 @@
   "name":"oDest",
   "overriddenProperties":[],
   "parent":{
-    "name":"teleport",
-    "path":"folders/Objects/teleport.yy",
+    "name":"Teleport",
+    "path":"folders/Objects/Teleport.yy",
   },
   "parentObjectId":null,
   "persistent":false,

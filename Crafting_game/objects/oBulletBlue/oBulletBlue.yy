@@ -6,8 +6,8 @@
   "name":"oBulletBlue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower",
-    "path":"folders/Objects/Tower.yy",
+    "name":"Bullet",
+    "path":"folders/Objects/TowerDefense/Bullet.yy",
   },
   "parentObjectId":null,
   "persistent":false,

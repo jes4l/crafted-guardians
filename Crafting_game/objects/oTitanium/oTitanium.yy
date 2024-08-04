@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oGold",
+  "%Name":"oTitanium",
   "eventList":[],
   "managed":true,
-  "name":"oGold",
+  "name":"oTitanium",
   "overriddenProperties":[],
   "parent":{
-    "name":"world",
-    "path":"folders/Objects/world.yy",
+    "name":"Materials",
+    "path":"folders/Objects/World/Materials.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGold",
-    "path":"sprites/sGold/sGold.yy",
+    "name":"sTitanium",
+    "path":"sprites/sTitanium/sTitanium.yy",
   },
   "spriteMaskId":null,
   "visible":true,

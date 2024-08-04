@@ -6,8 +6,8 @@
   "name":"oCollision",
   "overriddenProperties":[],
   "parent":{
-    "name":"world",
-    "path":"folders/Objects/world.yy",
+    "name":"Walls",
+    "path":"folders/Objects/World/Walls.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -14,8 +14,8 @@
   "name":"oEnemyBoss",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower",
-    "path":"folders/Objects/Tower.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/TowerDefense/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

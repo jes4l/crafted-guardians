@@ -22,7 +22,7 @@ for (var i = 0; i < 5; i++)
             itemSprite = sBrick;
             break;
         case 3: // Cell 4 (Gold)
-            itemSprite = sGold;
+            itemSprite = sTitanium;
             break;
         case 4: // Cell 5 (Stone)
             itemSprite = sStone;

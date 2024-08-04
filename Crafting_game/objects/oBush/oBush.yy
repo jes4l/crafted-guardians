@@ -9,8 +9,8 @@
   "name":"oBush",
   "overriddenProperties":[],
   "parent":{
-    "name":"world",
-    "path":"folders/Objects/world.yy",
+    "name":"Ground",
+    "path":"folders/Objects/World/Ground.yy",
   },
   "parentObjectId":{
     "name":"oBreakableParent",

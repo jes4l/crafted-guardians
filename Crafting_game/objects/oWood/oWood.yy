@@ -6,8 +6,8 @@
   "name":"oWood",
   "overriddenProperties":[],
   "parent":{
-    "name":"world",
-    "path":"folders/Objects/world.yy",
+    "name":"Ground",
+    "path":"folders/Objects/World/Ground.yy",
   },
   "parentObjectId":null,
   "persistent":false,

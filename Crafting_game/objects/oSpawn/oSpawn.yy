@@ -11,8 +11,8 @@
   "name":"oSpawn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower",
-    "path":"folders/Objects/Tower.yy",
+    "name":"Spawning",
+    "path":"folders/Objects/TowerDefense/Spawning.yy",
   },
   "parentObjectId":null,
   "persistent":false,

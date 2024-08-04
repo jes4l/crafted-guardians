@@ -32,7 +32,7 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cos
             y_offset += 20;
         }
         if (cost_gold > 0) {
-            draw_sprite(sGold, 0, x_offset, y_offset);
+            draw_sprite(sTitanium, 0, x_offset, y_offset);
             draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_gold));
             y_offset += 20;
         }
