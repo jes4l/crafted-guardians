@@ -1,8 +1,6 @@
 instance_destroy();
 global.life = 1;
 global.coins = 100;
-global.countdown = 10;
-
 
 instance_create_layer(x, y, "Instances", oKey);
 // Set message on oPlayer
