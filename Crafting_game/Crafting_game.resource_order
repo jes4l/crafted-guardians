@@ -79,6 +79,7 @@
     {"name":"sReg","order":25,"path":"sprites/sReg/sReg.yy",},
     {"name":"sSelector","order":27,"path":"sprites/sSelector/sSelector.yy",},
     {"name":"sShop","order":16,"path":"sprites/sShop/sShop.yy",},
+    {"name":"sShopStone","order":28,"path":"sprites/sShopStone/sShopStone.yy",},
     {"name":"sStone","order":11,"path":"sprites/sStone/sStone.yy",},
     {"name":"sTitanium","order":13,"path":"sprites/sTitanium/sTitanium.yy",},
     {"name":"sTower","order":15,"path":"sprites/sTower/sTower.yy",},

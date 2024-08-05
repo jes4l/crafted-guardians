@@ -115,6 +115,7 @@
     {"id":{"name":"sReg","path":"sprites/sReg/sReg.yy",},},
     {"id":{"name":"sSelector","path":"sprites/sSelector/sSelector.yy",},},
     {"id":{"name":"sShop","path":"sprites/sShop/sShop.yy",},},
+    {"id":{"name":"sShopStone","path":"sprites/sShopStone/sShopStone.yy",},},
     {"id":{"name":"sStone","path":"sprites/sStone/sStone.yy",},},
     {"id":{"name":"sTitanium","path":"sprites/sTitanium/sTitanium.yy",},},
     {"id":{"name":"sTower","path":"sprites/sTower/sTower.yy",},},
