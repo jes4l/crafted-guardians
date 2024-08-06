@@ -28,28 +28,36 @@ draw_set_color(-1);
 // Shooting and circle code
 if(mouseOver(x,y,sprite_width,sprite_height))
 	draw_circle(x,y,range,true);
-	
-var tw = instance_nearest(x,y,oTower1);
-if(tw != noone)
-{
-	if(point_distance(x,y,tw.x,tw.y) <= range+15)
-	{
-	
-		if(!shooting)
-		{
-			alarm[0] = 1;
-			shooting = true;	
-		}
-		
-		objectToShoot = tw;
-		if(mouseOver(x,y,sprite_width,sprite_height))
-			draw_line(x,y,tw.x,tw.y);
-	}
-	else
-	{
-		shooting = false;
-		objectToShoot = noone;
-		
-	}
-	
+
+// Find the nearest tower (either oTower1 or oTower2)
+var tw1 = instance_nearest(x, y, oTower1);
+var tw2 = instance_nearest(x, y, oTower2);
+var tw = noone;
+
+if (tw1 != noone && tw2 != noone) {
+    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y)) {
+        tw = tw1;
+    } else {
+        tw = tw2;
+    }
+} else if (tw1 != noone) {
+    tw = tw1;
+} else if (tw2 != noone) {
+    tw = tw2;
+}
+
+if (tw != noone) {
+    if (point_distance(x, y, tw.x, tw.y) <= range + 15) {
+        if (!shooting) {
+            alarm[0] = 1;
+            shooting = true;
+        }
+
+        objectToShoot = tw;
+        if (mouseOver(x, y, sprite_width, sprite_height))
+            draw_line(x, y, tw.x, tw.y);
+    } else {
+        shooting = false;
+        objectToShoot = noone;
+    }
 }
