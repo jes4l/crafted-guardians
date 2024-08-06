@@ -6,10 +6,10 @@ if (_dist < other.breakDistance) {
         // A tower is yet to be placed
     } else {
         // Check if the player has enough wood and stone
-        if (global.inventory[# 0, 0] >= cost_wood && global.inventory[# 0, 1] >= cost_stone) {
-            instance_create_depth(mouse_x, mouse_y, -9, oTower1D);
+        if (global.inventory[# 0, 0] >= cost_wood && global.inventory[# 4, 0] >= cost_stone) {
+            instance_create_depth(mouse_x, mouse_y, -9, oTower2D);
             global.inventory[# 0, 0] -= cost_wood;
-            global.inventory[# 0, 1] -= cost_stone;
+            global.inventory[# 4, 0] -= cost_stone;
         } else {
             // Set error message on oPlayer
             oPlayer.message = "Not enough resources to purchase";

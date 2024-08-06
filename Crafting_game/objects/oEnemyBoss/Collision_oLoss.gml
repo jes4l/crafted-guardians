@@ -1,6 +1,14 @@
-instance_destroy();
-global.life = 1;
-global.coins = 100;
+if(global.life == 2 || global.life == 3){
+    global.life = 1;
+    global.coins = 100;
+    instance_destroy();
+}
+
+else if(global.life == 1){
+    room_goto(rmEnd);
+    instance_destroy();
+}
+
 
 instance_create_layer(x, y, "Instances", oKey);
 // Set message on oPlayer
