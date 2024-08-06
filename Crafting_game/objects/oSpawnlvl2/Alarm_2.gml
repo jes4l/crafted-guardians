@@ -1,4 +1,5 @@
-if (instance_number(oEnemy) <= 0 && spawn_count >= spawn_amount) {
+// Alarm2 event
+if (instance_number(oEnemyHomelander) <= 0 && spawn_count_homelander >= spawn_amount_homelander) {
     if (!boss_spawned) {
         oPlayer.message = "The Boss Has Spawned";
         oPlayer.alarm[0] = room_speed * 3;
@@ -9,4 +10,4 @@ if (instance_number(oEnemy) <= 0 && spawn_count >= spawn_amount) {
         spawn_count_boss++;
     }
 }
-alarm[1] = room_speed * 5;
+alarm[2] = room_speed * 5;

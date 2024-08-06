@@ -22,5 +22,4 @@ spawn_rate_boss = 1 * room_speed;
 
 // Countdown
 global.countdown = 10;
-alarm[2] = room_speed;
 boss_spawned = false;

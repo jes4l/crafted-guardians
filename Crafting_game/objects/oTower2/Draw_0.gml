@@ -5,8 +5,10 @@ if(mouseOver(x,y,sprite_width,sprite_height))
 // Shooting enemy code	
 var en = instance_nearest(x, y, oEnemy);
 var boss = instance_nearest(x, y, oEnemyBoss);
+var homelander = instance_nearest(x, y, oEnemyHomelander);
 var en_dist = noone;
 var boss_dist = noone;
+var homelander_dist = noone;
 var nearest = noone;
 
 if (en != noone) {
@@ -17,12 +19,16 @@ if (boss != noone) {
     boss_dist = point_distance(x, y, boss.x, boss.y);
 }
 
-if (en != noone && boss != noone) {
-    nearest = (en_dist <= boss_dist) ? en : boss;
-} else if (en != noone) {
+if (homelander != noone) {
+    homelander_dist = point_distance(x, y, homelander.x, homelander.y);
+}
+
+if (en != noone && (boss == noone || en_dist <= boss_dist) && (homelander == noone || en_dist <= homelander_dist)) {
     nearest = en;
-} else if (boss != noone) {
+} else if (boss != noone && (homelander == noone || boss_dist <= homelander_dist)) {
     nearest = boss;
+} else if (homelander != noone) {
+    nearest = homelander;
 }
 
 if (nearest != noone) {
@@ -40,7 +46,6 @@ if (nearest != noone) {
         objectToShoot = noone;
     }
 }
-
 
 event_inherited();
 draw_self();

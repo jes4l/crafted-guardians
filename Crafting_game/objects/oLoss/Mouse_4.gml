@@ -9,6 +9,11 @@ if (_dist < other.breakDistance) {
         global.inventory[# 1, 0] -= cost_key;
         global.level++;
         instance_destroy();
+    } else {
+        // Set error message on oPlayer
+        oPlayer.message = "Not enough Keys to Unlock Gate";
+        oPlayer.alarm[0] = room_speed * 2; // Set the alarm to clear the message after 2 seconds
+        show_debug_message("Message set: " + oPlayer.message);
     }
 } else {
     // Set error message on oPlayer

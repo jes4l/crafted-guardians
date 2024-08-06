@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = 9;
+hp = 6;
 hpMax = hp;
 
