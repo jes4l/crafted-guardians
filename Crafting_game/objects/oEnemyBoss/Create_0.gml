@@ -1,3 +1,4 @@
+original_speed = global.spd_boss; // Store the original speed
 path_start(Path1, global.spd_boss, 0, 1);
 hp = global.hp_boss;
 max_hp = global.hp_boss;
