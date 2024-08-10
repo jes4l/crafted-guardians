@@ -3,7 +3,7 @@
 </h1>
 
 ### Tasks
--  lvl 2: Emp (need a better name) - add to shop - collision(all enemy) - spd = 0 and range = 0 for 5 seconds - collision with 1 should effect all - cost: 350 coins.
+-  lvl 2: Emp (need a better name) - add to shop - collision(all enemy) - spd = 0 and range = 0 for 5 seconds - collision with 1 should effect all - cost: 350 coins. Need to find a way to destroy it after 3 seconds
 
 
 - lvl 2: Stone placement needs to be improved, stone slab design improvement, need 1 more item which gives stones (maybe a statue).
