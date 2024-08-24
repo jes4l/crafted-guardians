@@ -8,5 +8,5 @@ shooting = false;
 objectToShoot = noone;
 
 
-
+stored_position = 0;
 

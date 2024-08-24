@@ -1,7 +1,3 @@
-
-
-
-
 draw_self();
 if (mouseOver(x, y, sprite_width, sprite_height)) {
     draw_circle(x, y, range, true);
@@ -38,5 +34,3 @@ if (array_length(enemies) > 0) {
 } else {
     shooting = false;
 }
-
-;

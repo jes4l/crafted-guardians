@@ -10,8 +10,8 @@
   "name":"oEMP1C",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower1",
-    "path":"folders/Objects/TowerDefense/Tower/Tower1.yy",
+    "name":"EMP",
+    "path":"folders/Objects/EMP.yy",
   },
   "parentObjectId":null,
   "persistent":false,

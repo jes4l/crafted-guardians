@@ -16,9 +16,12 @@ if (shooting) {
         }
     }
     for (var i = 0; i < array_length(enemies); i++) {
+        var enemy = enemies[i];
+        var future_x = enemy.x + lengthdir_x(enemy.speed * 2, enemy.direction);
+        var future_y = enemy.y + lengthdir_y(enemy.speed * 2, enemy.direction);
         var bullet = instance_create_depth(x, y, -9, oBulletEMP);
-        bullet.speed = 10;
-        bullet.direction = point_direction(x, y, enemies[i].x, enemies[i].y);
+        bullet.speed = 20; // Increase bullet speed
+        bullet.direction = point_direction(x, y, future_x, future_y);
     }
     alarm[0] = fire_rate;
 } else {

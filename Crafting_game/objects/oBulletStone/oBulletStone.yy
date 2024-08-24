@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oWood",
+  "%Name":"oBulletStone",
   "eventList":[],
   "managed":true,
-  "name":"oWood",
+  "name":"oBulletStone",
   "overriddenProperties":[],
   "parent":{
-    "name":"Materials",
-    "path":"folders/Objects/World/Materials.yy",
+    "name":"Bullet",
+    "path":"folders/Objects/TowerDefense/Bullet.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWood",
-    "path":"sprites/sWood/sWood.yy",
+    "name":"sBulletStone",
+    "path":"sprites/sBulletStone/sBulletStone.yy",
   },
   "spriteMaskId":null,
   "visible":true,
