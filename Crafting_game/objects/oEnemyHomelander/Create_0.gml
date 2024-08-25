@@ -10,3 +10,5 @@ objectToShoot = noone;
 
 stored_position = 0;
 
+// Spikes
+in_contact_with_spikes = false;

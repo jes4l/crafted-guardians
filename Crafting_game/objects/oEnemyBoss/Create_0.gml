@@ -12,3 +12,6 @@ audio_play_sound(snd_TonyClarkHades, 1, false);
 
 
 stored_position = 0;
+
+// Spikes
+in_contact_with_spikes = false;

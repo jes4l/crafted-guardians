@@ -7,3 +7,7 @@ if (hp <= 0) {
     show_debug_message("Message set: " + oPlayer.message);
 }
 
+//spikes
+if (!place_meeting(x, y, oSpikes)) {
+    in_contact_with_spikes = false;
+}
