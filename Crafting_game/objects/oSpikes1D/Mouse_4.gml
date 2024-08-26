@@ -1,5 +1,4 @@
-if(col == c_white)
-{
-	instance_destroy();
-	instance_create_depth(mouse_x, mouse_y,-1,oSpikes);
+if (place_meeting(mouse_x, mouse_y, oReg)) {
+    instance_destroy();
+    instance_create_depth(mouse_x, mouse_y, -1, oSpikes);
 }
