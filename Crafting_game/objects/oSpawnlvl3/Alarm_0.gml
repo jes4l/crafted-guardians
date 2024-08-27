@@ -1,3 +1,4 @@
+// Alarm0 event
 if (global.countdown > 0) {
     global.countdown--;
 } else {

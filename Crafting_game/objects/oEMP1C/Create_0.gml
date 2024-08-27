@@ -5,5 +5,5 @@ cost_brick = 0;
 cost_gold = 0;
 cost_coin = 100;
 
-breakDistance = 80;
+breakDistance = 180;
 
