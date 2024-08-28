@@ -10,4 +10,4 @@ if (instance_number(oEnemyHomelander) <= 0 && spawn_count_homelander >= spawn_am
         spawn_count_boss++;
     }
 }
-alarm[2] = room_speed * 5;
+alarm[2] = room_speed * 3;

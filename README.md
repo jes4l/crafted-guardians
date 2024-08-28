@@ -3,37 +3,28 @@
 </h1>
 
 ### Tasks
--  lvl 2: Emp (need a better name) - add to shop - collision(all enemy) - spd = 0 and range = 0 for 5 seconds - collision with 1 should effect all - cost: 350 coins. Need to find a way to destroy it after 3 seconds
+
+- lvl1 - **tree = stick, bush = stick, basic tower, many enemy, enemy boss - done**
+
+- lvl2 - **stoneslab = stone, big stone = stone, stronger tower, spikes, many enemy, many enemy boss - done**
+
+- lvl3 - ore = random amount of steel 1,3, tower bomb fire, bomb, **many enemy, many enemy homelander, many enemy boss** - partial complete
+
+- lvl4 - ore = random amount of steel 1,5, electricity, **multiple enemy ricochet tower, emp, many enemy, many homelander enemy, many boss enemy,** death boss = homelander - partial complete
+
+- lvl5 - building = random amount of brick,  shield around player, hp and lives store, many enemy, many homelander, many boss now enemy homelander and boss can attack player - not started
+
+- lvl6 - Final level - all enemies become harder - not started
 
 
-- lvl 2: Stone placement needs to be improved, stone slab design improvement, need 1 more item which gives stones (maybe a statue).
+- portals need to be added from lvl3 onwards - not started
 
+- stores need to be added from lvl4 onwards - not started
 
-- lvl 3: new map
+- end screen edit loss and win - not started
 
-- lvl 3: improved difficulty in oSpawnlvl3. maybe make new  or stronger enemies
+- start screen edit - not started
 
-
-- lvl 3: use brick to create a shield - get multiple brick wall from shop, r to rotate walls to build a shield/box.
-
-- lvl 3: enemies can now damage oPlayer
-
-- lvl 3: health to be added to shop : cost 400 for full hp
-
-
-- lvl 4: new map, increase difficulty
-
-- lvl 4: lock on towers, auto destroy after time
-
-
-- lvl 5: new map
-
-- lvl 5: endurance, more materials spawn 
-
-
-- lvl 6: new map, max difficulty, impossible level
-
-- lvl 6: game complete, if you survive
-
+- sound - not started
 
  

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"find_nearest_enemies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"find_nearest_enemies",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

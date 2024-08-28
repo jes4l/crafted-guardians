@@ -9,4 +9,4 @@ if (instance_number(oEnemy) <= 0 && spawn_count >= spawn_amount) {
         spawn_count_boss++;
     }
 }
-alarm[1] = room_speed * 5;
+alarm[1] = room_speed * 3;
