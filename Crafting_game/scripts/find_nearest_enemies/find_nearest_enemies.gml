@@ -1,4 +1,4 @@
-// Script to find the nearest 3 enemies within range of oTower3 and change their colors
+// Script to find the nearest 3 enemies within range of oTower4 and change their colors
 
 /// @description Find the nearest 3 enemies within range and change their colors
 /// @param range The range within which to find enemies

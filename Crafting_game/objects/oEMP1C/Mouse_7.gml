@@ -2,7 +2,7 @@ var _dist = distance_to_object(oPlayer);
 
 if (_dist < other.breakDistance) {
     // Check if a tower already exists
-    if (instance_exists(oTower1D) || instance_exists(oTower2D) /*|| instance_exists(oTower3D*/) {
+    if (instance_exists(oTower1D) || instance_exists(oTower2D) || instance_exists(oTower4D)) {
         // A tower is yet to be placed
     } else {
         if (global.inventory[# 0, 0] >= cost_wood) {

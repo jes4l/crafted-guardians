@@ -1,4 +1,4 @@
-function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cost_coin, sprite) {
+function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium, cost_coin, sprite) {
 
     draw_self();
     
@@ -31,9 +31,9 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_gold, cos
             draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_brick));
             y_offset += 20;
         }
-        if (cost_gold > 0) {
+        if (cost_titanium > 0) {
             draw_sprite(sTitanium, 0, x_offset, y_offset);
-            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_gold));
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_titanium));
             y_offset += 20;
         }
         if (cost_coin > 0) {

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oTower3C",
+  "%Name":"oTower4C",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTower3C",
+  "name":"oTower4C",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower3",
-    "path":"folders/Objects/TowerDefense/Tower/Tower3.yy",
+    "name":"Tower4",
+    "path":"folders/Objects/TowerDefense/Tower/Tower4.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTowerMetal",
-    "path":"sprites/sTowerMetal/sTowerMetal.yy",
+    "name":"sTowerElectricity",
+    "path":"sprites/sTowerElectricity/sTowerElectricity.yy",
   },
   "spriteMaskId":null,
   "visible":true,

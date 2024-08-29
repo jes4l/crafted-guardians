@@ -32,17 +32,17 @@ if(mouseOver(x, y, sprite_width, sprite_height))
 // Find the nearest tower (either oTower1, oTower2, or oTower3)
 var tw1 = instance_nearest(x, y, oTower1);
 var tw2 = instance_nearest(x, y, oTower2);
-var tw3 = instance_nearest(x, y, oTower3);
+var tw4 = instance_nearest(x, y, oTower4);
 var tw = noone;
 
 // Determine which tower is closest
-if (tw1 != noone && tw2 != noone && tw3 != noone) {
-    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw3.x, tw3.y)) {
+if (tw1 != noone && tw2 != noone && tw4 != noone) {
+    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw1;
-    } else if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw3.x, tw3.y)) {
+    } else if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw2;
     } else {
-        tw = tw3;
+        tw = tw4;
     }
 } else if (tw1 != noone && tw2 != noone) {
     if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y)) {
@@ -50,24 +50,24 @@ if (tw1 != noone && tw2 != noone && tw3 != noone) {
     } else {
         tw = tw2;
     }
-} else if (tw1 != noone && tw3 != noone) {
-    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw3.x, tw3.y)) {
+} else if (tw1 != noone && tw4 != noone) {
+    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw1;
     } else {
-        tw = tw3;
+        tw = tw4;
     }
-} else if (tw2 != noone && tw3 != noone) {
-    if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw3.x, tw3.y)) {
+} else if (tw2 != noone && tw4 != noone) {
+    if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw2;
     } else {
-        tw = tw3;
+        tw = tw4;
     }
 } else if (tw1 != noone) {
     tw = tw1;
 } else if (tw2 != noone) {
     tw = tw2;
-} else if (tw3 != noone) {
-    tw = tw3;
+} else if (tw4 != noone) {
+    tw = tw4;
 }
 
 // Shooting logic

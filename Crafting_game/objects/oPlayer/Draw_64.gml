@@ -5,7 +5,7 @@ var cellHeight = 50;
 var startX = 10;
 var startY = display_get_gui_height() - cellHeight - 10 + 20;
 
-for (var i = 0; i < 5; i++)
+for (var i = 0; i < 6; i++) // Updated to 6 slots
 {
     var itemQuantity = global.inventory[# i, 0];
     var itemSprite;
@@ -21,11 +21,14 @@ for (var i = 0; i < 5; i++)
         case 2: // Cell 3 (Brick)
             itemSprite = sBrick;
             break;
-        case 3: // Cell 4 (Gold)
+        case 3: // Cell 4 (Titanium)
             itemSprite = sTitanium;
             break;
         case 4: // Cell 5 (Stone)
             itemSprite = sStone;
+            break;
+        case 5: // Cell 6 (Lightning)
+            itemSprite = sLightning;
             break;
         default:
             itemSprite = sDefault;
