@@ -1,4 +1,4 @@
-function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium, cost_coin, sprite) {
+function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium, cost_coin, cost_lightning, sprite) {
 
     draw_self();
     
@@ -39,6 +39,11 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium,
         if (cost_coin > 0) {
             draw_sprite(sCoin, 0, x_offset, y_offset);
             draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_coin));
+            y_offset += 20;
+        }
+        if (cost_lightning > 0) {
+            draw_sprite(sLightning, 0, x_offset, y_offset);
+            draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_lightning));
             y_offset += 20;
         }
     }

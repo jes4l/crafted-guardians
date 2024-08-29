@@ -8,3 +8,4 @@ cost_key = 0;
 cost_brick = 0;
 cost_titanium = 0;
 cost_coin = 150;
+cost_lightning = 0;
