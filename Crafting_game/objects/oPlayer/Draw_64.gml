@@ -1,6 +1,6 @@
-draw_set_font(fntGUI);
+draw_set_font(fntGUI_smallest);
 // In oPlayer Draw GUI event
-var cellWidth = 35;
+var cellWidth = 36;
 var cellHeight = 50;
 var startX = 10;
 var startY = display_get_gui_height() - cellHeight - 10 + 20;
@@ -49,23 +49,25 @@ for (var i = 0; i < 6; i++) // Updated to 6 slots
     var itemX = box_center_x - sprite_get_width(itemSprite) / 2 + 6;
     var itemY = box_center_y - sprite_get_height(itemSprite) / 2 + 6;
 
-    // Draw smaller grey box
+    // Draw smaller grey box with translucency
     draw_set_color(c_dkgray);
+    draw_set_alpha(0.6); // Set alpha to 0.5 for translucency
     draw_rectangle(box_x1, box_y1, box_x2, box_y2, false);
+    draw_set_alpha(1); // Reset alpha to 1 for other drawings
 
     // Draw the item sprite inside the box
     draw_sprite(itemSprite, 0, itemX, itemY);
 
     // Display the item quantity slightly lower and to the right
     draw_set_color(c_white);
-    var quantityX = box_center_x + 2;
-    var quantityY = box_center_y - sprite_get_height(itemSprite) / 2 + 6;
+    var quantityX = box_center_x + 0.5;
+    var quantityY = box_center_y - sprite_get_height(itemSprite) / 2 + 10;
 
     draw_text(quantityX, quantityY, string(itemQuantity));
 
     // Draw white outline around the smaller grey box
-    draw_set_color(c_white);
-    var outline_thickness = 1;
+    draw_set_color(c_dkgray);
+    var outline_thickness = 0.5;
 
     draw_rectangle(box_x1 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y1 + outline_thickness, false); // Top
     draw_rectangle(box_x1 - outline_thickness, box_y2 - outline_thickness, box_x2 + outline_thickness, box_y2 + outline_thickness, false); // Bottom

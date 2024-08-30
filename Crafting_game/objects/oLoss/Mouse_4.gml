@@ -4,9 +4,21 @@ var _dist = distance_to_object(oPlayer);
 // In range?
 if (_dist < other.breakDistance) {
     // Check if player has enough keys in inventory
-    if (global.inventory[# 1, 0] >= cost_key) {
+    if (global.inventory[# 0, 0] >= cost_wood &&
+        global.inventory[# 4, 0] >= cost_stone &&
+        global.inventory[# 1, 0] >= cost_key &&
+        global.inventory[# 2, 0] >= cost_brick &&
+        global.inventory[# 3, 0] >= cost_titanium &&
+        global.inventory[# 5, 0] >= cost_lightning) {
         // Deduct the cost and destroy the instance
+		global.inventory[# 0, 0] -= cost_wood;
+        global.inventory[# 4, 0] -= cost_stone;
         global.inventory[# 1, 0] -= cost_key;
+        global.inventory[# 2, 0] -= cost_brick;
+        global.inventory[# 3, 0] -= cost_titanium;
+        global.inventory[# 5, 0] -= cost_lightning;
+		
+
         global.level++;
         instance_destroy();
     } else {
