@@ -75,3 +75,4 @@ for (var i = 0; i < 6; i++) // Updated to 6 slots
     draw_rectangle(box_x2 - outline_thickness, box_y1 - outline_thickness, box_x2 + outline_thickness, box_y2 + outline_thickness, false); // Right
 }
 draw_set_font(-1);
+draw_set_color(-1);

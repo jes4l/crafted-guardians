@@ -8,11 +8,11 @@ alarm[2] = room_speed * 5;
 
 // oEnemy
 global.hp = 175;
-global.spd = 1;
+global.spd = 1.2;
 
 // oEnemyhomelander
 global.hp_homelander = 375;
-global.spd_homelander = 1.2;
+global.spd_homelander = 1.4;
 spawn_amount_homelander = 10;
 spawn_count_homelander = 0;
 spawn_rate_homelander = 1 * room_speed;
@@ -20,11 +20,11 @@ homelander_spawned = false;
 
 // oEnemyBoss
 global.hp_boss = 475;
-global.spd_boss = 1.5;
-spawn_amount_boss = 5;
+global.spd_boss = 1.6;
+spawn_amount_boss = 6;
 spawn_count_boss = 0;
 spawn_rate_boss = 1 * room_speed;
 boss_spawned = false;
 
 // Countdown
-global.countdown = 16;
+global.countdown = 5;

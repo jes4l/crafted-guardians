@@ -1,10 +1,24 @@
-/// @description Insert description here
-// You can write your code in this editor
-if (hp <= 0){
-	instance_destroy();
-	wood = instance_create_layer(x, y, "Instances", oWood);
-	wood.image_blend = c_red;					// image_blend changes the color of a sprite (like a tint/filter)
-	wood.image_angle = irandom_range(0, 359);	// image angle is the angle of the sprite (rotates it randomly)
-	wood.image_index = irandom_range(0, 1);		// image index is the frame number of the sprite
-}
+if (hp <= 0) {
+    instance_destroy();
+    
+    var unique_position = false;
+    var random_x, random_y;
+    
+    while (!unique_position) {
+        random_x = x + irandom_range(-35, 35);
+        random_y = y + irandom_range(-35, 35);
+        unique_position = true;
+        
+        if (collision_line(x, y, random_x, random_y, oCollision, true, true)) {
+            unique_position = false;
+        }
 
+        if (collision_circle(random_x, random_y, 10, oCollision, true, true)) {
+            unique_position = false;
+        }
+    }
+    
+    var wood = instance_create_layer(random_x, random_y, "Instances", oWood);
+    wood.image_angle = irandom_range(0, 359);  // Rotate the sprite randomly
+    wood.image_index = irandom_range(0, 1);    // Random frame of the sprite
+}

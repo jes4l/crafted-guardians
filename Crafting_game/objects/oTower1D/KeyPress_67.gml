@@ -1,3 +1,3 @@
-global.inventory[# 0, 0] += 1;//cost_wood;
+global.inventory[# 0, 0] += 3;//cost_wood;
 
 instance_destroy();

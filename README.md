@@ -14,7 +14,7 @@
 
 - lvl3 - pickaxe out of fire, image, angel - not started
 
-- lvl4 - redo tower and shop, inventory for emp spikes bomb - not started
+- lvl4 - **redo tower and shop**, inventory for emp spikes bomb - started
 
 - lvl5 - building = random amount of brick,  shield around player, hp and lives store, many enemy, many homelander, many boss now enemy homelander and boss can attack player - not started
 

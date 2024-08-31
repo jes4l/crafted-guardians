@@ -1,2 +1,2 @@
 // In the collision event
-hp -= 20;
+hp -= 5;

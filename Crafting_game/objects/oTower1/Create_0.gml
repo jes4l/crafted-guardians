@@ -1,10 +1,8 @@
 range = 100;
-fire_rate = room_speed / 12;
+fire_rate = room_speed / 2;
 shooting = false;
 objectToShoot = noone;
-hp = 3000;
+hp = 300;
 max_hp = hp; 
 
 
-// 2
-// 300
