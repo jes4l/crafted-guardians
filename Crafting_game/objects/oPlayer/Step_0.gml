@@ -109,5 +109,51 @@ if (place_meeting(x, y, pad)) {
 
 
 			
+// Mouse Click Event
+if (mouse_check_button_pressed(mb_left)) {
+    var mouseX = device_mouse_x_to_gui(0);
+    var mouseY = device_mouse_y_to_gui(0);
+
+    for (var i = 0; i < 9; i++) {
+        var box_x1 = startX + i * cellWidth;
+        var box_y1 = startY + 4;
+        var box_x2 = startX + (i + 1) * cellWidth;
+        var box_y2 = startY + cellHeight - 12 - 4;
+
+        if (mouseX > box_x1 && mouseX < box_x2 && mouseY > box_y1 && mouseY < box_y2) {
+            if (i == 6) { // Check if the clicked slot is the spikes slot
+                if (global.inventory[# 6, 0] > 0) { // Check if the quantity is greater than 0
+                    instance_create_depth(mouse_x, mouse_y, -9, oSpikes1D);
+                    global.inventory[# 6, 0] -= 1; // Decrement the quantity
+                } else {
+                    // Set error message on oPlayer
+                    oPlayer.message = "Not enough Spikes in Inventory";
+                    oPlayer.alarm[0] = room_speed * 2; // Set the alarm to clear the message after 2 seconds
+                    show_debug_message("Message set: " + oPlayer.message);
+                }
+            } else if (i == 7) { // Check if the clicked slot is the bomb slot
+                if (global.inventory[# 7, 0] > 0) { // Check if the quantity is greater than 0
+                    instance_create_depth(mouse_x, mouse_y, -9, oBomb1D);
+                    global.inventory[# 7, 0] -= 1; // Decrement the quantity
+                } else {
+                    // Set error message on oPlayer
+                    oPlayer.message = "Not enough Bombs in Inventory";
+                    oPlayer.alarm[0] = room_speed * 2; // Set the alarm to clear the message after 2 seconds
+                    show_debug_message("Message set: " + oPlayer.message);
+                }
+            } else if (i == 8) { // Check if the clicked slot is the EMP slot
+                if (global.inventory[# 8, 0] > 0) { // Check if the quantity is greater than 0
+                    instance_create_depth(mouse_x, mouse_y, -9, oEMP1D);
+                    global.inventory[# 8, 0] -= 1; // Decrement the quantity
+                } else {
+                    // Set error message on oPlayer
+                    oPlayer.message = "Not enough EMPs in Inventory";
+                    oPlayer.alarm[0] = room_speed * 2; // Set the alarm to clear the message after 2 seconds
+                    show_debug_message("Message set: " + oPlayer.message);
+                }
+            }
+        }
+    }
+}
 
 
