@@ -3,9 +3,9 @@ event_inherited();
 draw_self();
 
 // Draw the health bar
-var bar_width = 30;
-var bar_height = 3;
-var bar_x = x - bar_width / 2;
+var bar_width = 15;
+var bar_height = 2;
+var bar_x = x - bar_width / 2 - 3;
 var bar_y = y - 20; // Y position of the health bar (slightly higher)
 
 // Calculate the width of the filled part of the health bar

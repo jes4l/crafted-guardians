@@ -1,0 +1,25 @@
+{
+  "$GMPath":"",
+  "%Name":"Path2",
+  "closed":true,
+  "kind":0,
+  "name":"Path2",
+  "parent":{
+    "name":"Bullet",
+    "path":"folders/Objects/TowerDefense/Bullet.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":206.6459,"y":598.7461,},
+    {"speed":100.0,"x":416.2027,"y":439.29337,},
+    {"speed":100.0,"x":618.56616,"y":539.37476,},
+    {"speed":100.0,"x":35.36923,"y":431.89893,},
+    {"speed":100.0,"x":43.506123,"y":337.81525,},
+    {"speed":100.0,"x":482.10095,"y":306.18527,},
+    {"speed":100.0,"x":614.8514,"y":74.646645,},
+    {"speed":100.0,"x":765.60913,"y":286.32217,},
+    {"speed":100.0,"x":1094.7125,"y":175.9714,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

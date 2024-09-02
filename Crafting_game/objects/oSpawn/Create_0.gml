@@ -21,5 +21,5 @@ spawn_count_boss = 0;
 spawn_rate_boss = 1 * room_speed;
 
 // Countdown
-global.countdown = 10; 
+global.countdown = 10;
 boss_spawned = false;

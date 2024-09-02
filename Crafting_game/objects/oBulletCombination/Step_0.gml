@@ -5,11 +5,11 @@ if (current_target_index < array_length(target_list)) {
         if (point_distance(x, y, target.x, target.y) < 10) {
             // Hit the target
             if (target.object_index == oEnemy) {
-                target.hp -= 220;
+                target.hp -= 175;
             } else if (target.object_index == oEnemyBoss) {
-                target.hp -= 220;
+                target.hp -= 175;
             } else if (target.object_index == oEnemyHomelander) {
-                target.hp -= 220;
+                target.hp -= 175;
             }
 
             // Check if the target's hp is less than or equal to 0
