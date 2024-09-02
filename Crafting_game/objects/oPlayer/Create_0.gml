@@ -1,12 +1,18 @@
 // properties
 moveSpeed = 1;
 
+global.hp_jesal = 50;
+hp = global.hp_jesal;
+max_hp = global.hp_jesal;
+
 // variables
 moveX = 0;
 moveY = 0;
 
 // Create Pickaxe
 heldItem = instance_create_layer(x, y, "Instances", oPickaxe);
+// pickaxe flipper
+global.flipEnabled = true; // Set to true to enable flipping by default
 
 // Inventory
 // Initialize startX and startY for inventory drawing

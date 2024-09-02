@@ -68,8 +68,11 @@ else {
 // Direction
 var _signMouse = sign(mouse_x - x);
 
-if (_signMouse != 0) {
-	image_xscale = _signMouse;
+if (global.flipEnabled) {
+
+    if (_signMouse != 0) {
+        image_xscale = _signMouse;
+    }
 }
 
 // Animation Speed
@@ -155,5 +158,6 @@ if (mouse_check_button_pressed(mb_left)) {
         }
     }
 }
+
 
 

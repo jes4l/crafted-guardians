@@ -20,6 +20,15 @@ spawn_amount_boss = 1;
 spawn_count_boss = 0;
 spawn_rate_boss = 1 * room_speed;
 
+// oEnemyGhost
+global.hp_ghost = 11;
+global.spd_ghost = 0.8;
+spawn_amount_ghost = 1;
+spawn_count_ghost = 0;
+spawn_rate_ghost = 1 * room_speed;
+ghost_spawned = false;
+
+
 // Countdown
 global.countdown = 10;
 boss_spawned = false;

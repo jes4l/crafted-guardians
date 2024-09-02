@@ -1,17 +1,3 @@
-// In oPlayer Draw event
-draw_self();
-
-if (message != "") {
-    var text_width = string_width(message);
-    var player_width = sprite_get_width(sprite_index);
-    var player_height = sprite_get_height(sprite_index);
-    var text_x = x - (text_width / 2);
-    var text_y = y - player_height / 2 - 20; // Adjust the offset as needed
-    draw_text(text_x, text_y, message);
-    show_debug_message("Drawing message: " + message);
-}
-
-
 event_inherited();
 draw_self();
 
@@ -19,7 +5,7 @@ draw_self();
 var bar_width = 15;
 var bar_height = 2;
 var bar_x = x - bar_width / 2;
-var bar_y = y - 23;
+var bar_y = y - 20;
 
 // Calculate the width of the filled part of the health bar
 var filled_width = (hp / max_hp) * bar_width;

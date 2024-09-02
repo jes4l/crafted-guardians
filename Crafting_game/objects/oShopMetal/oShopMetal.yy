@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyGhost",
+  "%Name":"oShopMetal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyGhost",
+  "name":"oShopMetal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/TowerDefense/Enemy.yy",
+    "name":"Shop",
+    "path":"folders/Objects/Shop.yy",
   },
-  "parentObjectId":{
-    "name":"oBreakableParent",
-    "path":"objects/oBreakableParent/oBreakableParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyGhost",
-    "path":"sprites/sEnemyGhost/sEnemyGhost.yy",
+    "name":"sShopMetal",
+    "path":"sprites/sShopMetal/sShopMetal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

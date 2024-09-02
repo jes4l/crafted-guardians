@@ -12,9 +12,9 @@
 
 - lvl4 - **ore = random amount of steel 1,5, electricity, multiple enemy ricochet tower, emp, many enemy, many homelander enemy, many boss enemy,** - done
 
-- lvl3 - pickaxe out of fire, image, angel - not started
+- lvl3 - **pickaxe out of fire, image, ghost** - done
 
-- lvl4 - **redo tower and shop**, inventory for emp spikes bomb - started
+- lvl4 - **redo tower and shop, inventory for emp spikes bomb** - done
 
 - lvl5 - building = random amount of brick,  shield around player, hp and lives store, many enemy, many homelander, many boss now enemy homelander and boss can attack player - not started
 

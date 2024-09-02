@@ -10,6 +10,9 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium,
         var text_y_offset = -11;
         var text_x_offset = + 10;
         
+        // Set alpha to 1 to ensure the costs are drawn above everything else
+        draw_set_alpha(1);
+        
         // Display the costs with corresponding item sprites on the right-hand side of the object
         if (cost_wood > 0) {
             draw_sprite(sWood, 0, x_offset, y_offset);
@@ -46,5 +49,8 @@ function CostDisplay(cost_wood, cost_stone, cost_key, cost_brick, cost_titanium,
             draw_text(x_offset + text_x_offset, y_offset + text_y_offset, string(cost_lightning));
             y_offset += 20;
         }
+        
+        // Reset alpha to default
+        draw_set_alpha(1);
     }
 }
