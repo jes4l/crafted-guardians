@@ -15,6 +15,11 @@ if (shooting) {
             array_push(enemies, id);
         }
     }
+    with (oGhost) {
+        if (point_distance(x, y, other.x, other.y) <= other.range) {
+            array_push(enemies, id);
+        }
+    }
     for (var i = 0; i < array_length(enemies); i++) {
         var enemy = enemies[i];
         var future_x = enemy.x + lengthdir_x(enemy.speed * 2, enemy.direction);

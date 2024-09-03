@@ -30,10 +30,19 @@ global.inventory = ds_grid_create(9, 1); // 9 cells (slots) in the inventory
 message = "";
 alarm[0] = -1; // Initialize the alarm
 
-
-
-
-
+/*
+//Test case
+global.inventory[# 0, 0] += 99;
+global.inventory[# 1, 0] += 99;
+global.inventory[# 2, 0] += 99;
+global.inventory[# 3, 0] += 99;
+global.inventory[# 4, 0] += 99;
+global.inventory[# 5, 0] += 99;
+global.inventory[# 6, 0] += 99;
+global.inventory[# 7, 0] += 99;
+global.inventory[# 8, 0] += 99;
+//coins are in oSpawn 
+*/
 
 
 

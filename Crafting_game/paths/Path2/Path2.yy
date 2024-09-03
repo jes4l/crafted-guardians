@@ -5,8 +5,8 @@
   "kind":0,
   "name":"Path2",
   "parent":{
-    "name":"Bullet",
-    "path":"folders/Objects/TowerDefense/Bullet.yy",
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
   "points":[
     {"speed":100.0,"x":206.6459,"y":598.7461,},

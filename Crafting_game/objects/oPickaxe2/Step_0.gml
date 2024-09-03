@@ -17,8 +17,8 @@ if (place_meeting(x, y, oPlayer)) {
         // Set breakDistance to 32 upon collision
         breakDistance = 32;
         global.flipEnabled = true;
-		global.shopMetalActive = true;
-		show_debug_message("Flag toggled to: " + string(global.shopMetalActive));
+        global.shopMetalActive = true;
+        show_debug_message("Flag toggled to: " + string(global.shopMetalActive));
     } else {
         show_debug_message("No instance of oPlayer found.");
     }
@@ -42,19 +42,22 @@ with (_breakable) {
     
     // In range?
     if (_dist < other.breakDistance) {
-        // set selected
-        other.selectorInst = id;
-        
-        // click
-        if (other.cooldown == 0 && _mousePress) {
-            // reduce hp
-            hp -= 7;
+        // Check line of sight
+        if (!collision_line(oPlayer.x, oPlayer.y, x, y, oCollision, false, true)) {
+            // set selected
+            other.selectorInst = id;
             
-            // Set rotation
-            other.rotations = -80;
-            
-            // set Cool down
-            other.cooldown = 20;
+            // click
+            if (other.cooldown == 0 && _mousePress) {
+                // reduce hp
+                hp -= 7;
+                
+                // Set rotation
+                other.rotations = -80;
+                
+                // set Cool down
+                other.cooldown = 20;
+            }
         }
     }
 }

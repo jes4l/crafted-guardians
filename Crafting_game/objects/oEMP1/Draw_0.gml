@@ -21,6 +21,11 @@ with (oEnemyHomelander) {
         array_push(enemies, id);
     }
 }
+with (oGhost) {
+    if (point_distance(x, y, other.x, other.y) <= other.range) {
+        array_push(enemies, id);
+    }
+}
 if (array_length(enemies) > 0) {
     if (!shooting) {
         alarm[0] = 1;
