@@ -161,3 +161,22 @@ if (mouse_check_button_pressed(mb_left)) {
 
 
 
+
+
+
+
+
+
+
+/*
+
+
+// Rotate the shield when the "J" key is pressed
+if (keyboard_check_pressed(ord("J"))) {
+    shieldRotation += 45; // Adjust the rotation angle as needed
+}
+
+// Keep the shield rotation within 0-360 degrees
+shieldRotation = shieldRotation mod 360;
+
+*/

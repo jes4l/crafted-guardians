@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oShopElectricity",
+  "%Name":"oShopBrick",
   "eventList":[],
   "managed":true,
-  "name":"oShopElectricity",
+  "name":"oShopBrick",
   "overriddenProperties":[],
   "parent":{
     "name":"Shop",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sShopElectricity",
-    "path":"sprites/sShopElectricity/sShopElectricity.yy",
+    "name":"sShopBrick",
+    "path":"sprites/sShopBrick/sShopBrick.yy",
   },
   "spriteMaskId":null,
   "visible":true,

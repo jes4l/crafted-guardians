@@ -38,3 +38,27 @@ if (hp < max_hp) {
     draw_rectangle(bar_x + filled_width, bar_y, bar_x + bar_width, bar_y + bar_height, false);
 }
 draw_set_color(-1);
+
+
+
+
+
+
+
+
+
+
+/*
+
+// Draw the player
+draw_self();
+
+// Draw the shield around the player
+for (var i = 0; i < array_length(shieldAngles); i++) {
+    var angle = shieldAngles[i] + shieldRotation;
+    var radian = degtorad(angle);
+    var shieldX = x + radius * cos(radian);
+    var shieldY = y + radius * sin(radian);
+    draw_sprite(sShield, 0, shieldX, shieldY);
+}
+*/
