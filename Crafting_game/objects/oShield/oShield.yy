@@ -11,8 +11,8 @@
   "name":"oShield",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Shield",
+    "path":"folders/Objects/Shield.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sShield",
-    "path":"sprites/sShield/sShield.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -8,23 +8,23 @@ for (var i = 0; i < 9; i++) // Updated to 9 slots
 
     switch (i)
     {
-        case 0: // Cell 1 (Wood)
+        case 0: // Cell 1 (Key)
+            itemSprite = sKey;
+            break;		
+        case 1: // Cell 2 (Wood)
             itemSprite = sWood;
             break;
-        case 1: // Cell 2 (Iron)
-            itemSprite = sKey;
-            break;
-        case 2: // Cell 3 (Brick)
-            itemSprite = sBrick;
+        case 2: // Cell 3 (Stone)
+            itemSprite = sStone;
             break;
         case 3: // Cell 4 (Titanium)
             itemSprite = sTitanium;
             break;
-        case 4: // Cell 5 (Stone)
-            itemSprite = sStone;
-            break;
-        case 5: // Cell 6 (Lightning)
+        case 4: // Cell 5 (Electricity)
             itemSprite = sLightning;
+            break;
+	    case 5: // Cell 6 (Water)
+            itemSprite = sWater;
             break;
         case 6: // Cell 7 (Spikes)
             itemSprite = sSpikes;

@@ -45,5 +45,6 @@ if (collisions > 0) {
 
 // Check HP and destroy instance if HP is 0 or less
 if (global.hp_shield <= 0) {
+	global.shieldActive = false;
     instance_destroy();
 }

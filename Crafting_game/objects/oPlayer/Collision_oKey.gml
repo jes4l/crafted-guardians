@@ -1,8 +1,6 @@
-
+// Collision event for Key
 instance_destroy(other);
-var itemType = "Iron";
-var cellIndex = 1; // Cell 2
-
-// Increment the quantity in the inventory cell
+var itemType = "Key";
+var cellIndex = 0; // Cell 1
 global.inventory[# cellIndex, 0] += 1;
 show_debug_message("Inventory " + itemType + ": " + string(global.inventory[# cellIndex, 0]));

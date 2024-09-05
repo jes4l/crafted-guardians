@@ -1,7 +1,6 @@
+// Collision event for Lightning
 instance_destroy(other);
-var itemType = "Lightning";
-var cellIndex = 5; // Cell 6
-
-// Increment the quantity in the inventory cell
+itemType = "Ligtning";
+cellIndex = 4; // Cell 5
 global.inventory[# cellIndex, 0] += 1;
 show_debug_message("Inventory " + itemType + ": " + string(global.inventory[# cellIndex, 0]));
