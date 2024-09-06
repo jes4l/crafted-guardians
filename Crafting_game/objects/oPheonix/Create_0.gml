@@ -3,7 +3,7 @@
 
 
 hp = global.hp_pheonix;
-hpMax = hp;
+max_hp = hp;
 
 
 path_start(Path2, global.spd_pheonix, 0, 1);

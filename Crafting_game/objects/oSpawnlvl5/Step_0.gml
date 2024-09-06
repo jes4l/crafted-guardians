@@ -4,6 +4,7 @@
     global.inventory[# 2, 0] += 5;
     global.inventory[# 3, 0] += 5;
     global.inventory[# 4, 0] += 5;
+	global.inventory[# 5, 0] += 5;
 	global.coins += 50;	
     instance_destroy();
 }

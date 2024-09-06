@@ -25,3 +25,27 @@ if (hp < max_hp) {
     draw_rectangle(bar_x + filled_width, bar_y, bar_x + bar_width, bar_y + bar_height, false);
 }
 draw_set_color(-1);
+
+
+
+
+
+
+
+
+
+// Change colour shader
+if (color_pink) {
+    // Activate the shader
+    shader_set(Shader1);
+    
+    // Draw the sprite using the shader
+    draw_self();
+    
+    // Reset the shader back to default
+    shader_reset();
+} else {
+    draw_self(); // Draw the sprite normally
+}
+
+

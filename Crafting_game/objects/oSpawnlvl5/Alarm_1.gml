@@ -1,12 +1,12 @@
-if (instance_number(oEnemy) <= 0 && spawn_count >= spawn_amount) {
-    if (!homelander_spawned) {
-        oPlayer.message = "The HomeLander Has Landed";
+if (instance_number(oGhost) <= 0 && spawn_count_ghost >= spawn_amount_ghost) {
+    if (!enemy_spawned) {
+        oPlayer.message = "The enemy is here";
         oPlayer.alarm[0] = room_speed * 3;
         show_debug_message("Message set: " + oPlayer.message);
-        homelander_spawned = true;
-    } else if (spawn_count_homelander < spawn_amount_homelander) {
-        instance_create_depth(x, y, -1, oEnemyHomelander);
-        spawn_count_homelander++;
+        enemy_spawned = true;
+    } else if (spawn_count_enemy < spawn_amount_enemy) {
+        instance_create_depth(x, y, -1, oEnemy);
+        spawn_count_enemy++;
     }
 }
 alarm[1] = room_speed * 1;

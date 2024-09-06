@@ -1,5 +1,17 @@
 if(!visible) return 0;
 
+// Male or Female
+var moveSprite, idleSprite;
+
+if (global.playerGender == "male") {
+    moveSprite = sPlayer_move;
+    idleSprite = sPlayer_idle;
+} else {
+    moveSprite = sPlayerFemale_move;
+    idleSprite = sPlayerFemale_idle;
+}
+
+
 // Get input buttons
 var _right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 var _left = keyboard_check(vk_left) or keyboard_check(ord("A"));
@@ -54,7 +66,7 @@ y += moveY;
 
 // Animate Player
 if (moveX != 0 or moveY != 0) {
-	sprite_index = sPlayer_move;
+	sprite_index = moveSprite;
 	
 	// Flip sprite
 	// if (moveX != 0) image_xscale = -sign(moveX); // Multiply by -1 to flip directions
@@ -62,7 +74,7 @@ if (moveX != 0 or moveY != 0) {
 
 // Animation Idle
 else {
-	sprite_index = sPlayer_idle;
+	sprite_index = idleSprite;
 }
 
 // Direction

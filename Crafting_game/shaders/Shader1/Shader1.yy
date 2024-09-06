@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"Shader1",
+  "name":"Shader1",
+  "parent":{
+    "name":"Crafting_game",
+    "path":"Crafting_game.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

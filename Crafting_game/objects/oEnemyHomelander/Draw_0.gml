@@ -143,3 +143,28 @@ if (tw != noone) {
         objectToShoot = noone;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Change colour shader
+if (color_pink) {
+    // Activate Shader3
+    shader_set(Shader3);
+    
+    // Draw the sprite using the shader
+    draw_self();
+    
+    // Reset the shader back to default
+    shader_reset();
+} else {
+    draw_self(); // Draw the sprite normally
+}

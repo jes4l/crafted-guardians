@@ -25,6 +25,8 @@ startX = 10;
 startY = display_get_gui_height() - cellHeight - 10 + 20;
 global.inventory = ds_grid_create(9, 1); // 9 cells (slots) in the inventory
 
+show_debug_message("Player Created: " + string(global.playerGender));
+
 
 //message
 message = "";

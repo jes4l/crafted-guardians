@@ -42,10 +42,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sPlayer_idle",
-    "path":"sprites/sPlayer_idle/sPlayer_idle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":{
     "name":"sPlayer_idle",
     "path":"sprites/sPlayer_idle/sPlayer_idle.yy",

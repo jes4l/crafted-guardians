@@ -8,3 +8,6 @@ if (global.countdown > 0) {
     }
 }
 alarm[0] = spawn_rate_ghost;
+
+
+
