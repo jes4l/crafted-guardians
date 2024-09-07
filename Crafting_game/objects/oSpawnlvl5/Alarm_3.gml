@@ -23,9 +23,9 @@ if (instance_number(oEnemyHomelander) <= 0 && spawn_count_homelander >= spawn_am
         
         // Reset the alarms without resetting the countdown
         alarm[0] = 1;
-        alarm[1] = room_speed * 2;
+        alarm[1] = room_speed * 3;
         alarm[2] = room_speed * 3;
-        alarm[3] = room_speed * 5;
+        alarm[3] = room_speed * 3;
         
         // Increment the repeat counter
         repeat_sequence++;

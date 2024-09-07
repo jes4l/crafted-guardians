@@ -52,3 +52,6 @@ global.shieldActive = false;
 // Include the shield functions script
 scr_shield_functions();
 
+
+// Spikes
+in_contact_with_spikes_lava = false;

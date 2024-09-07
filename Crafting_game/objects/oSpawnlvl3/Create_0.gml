@@ -3,9 +3,9 @@ spawn_amount = 7;
 spawn_count = 0;
 spawn_rate = 1 * room_speed;
 alarm[0] = 1;
-alarm[1] = room_speed * 5;
-alarm[2] = room_speed * 5;
-alarm[3] = room_speed * 5;
+alarm[1] = room_speed * 3;
+alarm[2] = room_speed * 3;
+alarm[3] = room_speed * 3;
 
 // oEnemy
 global.hp = 175;

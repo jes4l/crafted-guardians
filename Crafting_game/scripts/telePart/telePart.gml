@@ -5,9 +5,17 @@ function telePart() {
     // Create the particle system
     global.Sname = part_system_create_layer(layer_id, true);
 
+    // Determine the sprite based on player gender
+    var particleSprite;
+    if (global.playerGender == "male") {
+        particleSprite = sPlayer_idle;
+    } else {
+        particleSprite = sPlayerFemale_idle;
+    }
+
     // Create the particle type
     global.Particle1 = part_type_create();
-    part_type_sprite(global.Particle1, sPlayer_idle, true, false, false);
+    part_type_sprite(global.Particle1, particleSprite, true, false, false);
     part_type_size(global.Particle1, 1, 1, 0, 0);
     part_type_scale(global.Particle1, 1, 1);
     part_type_alpha3(global.Particle1, 1, 0.50, 0.10);

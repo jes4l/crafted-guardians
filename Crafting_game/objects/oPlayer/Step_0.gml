@@ -1,3 +1,13 @@
+if (hp <= 0) {
+	room_goto(rmEnd);
+	instance_destroy();
+}
+
+// spikes
+if (!place_meeting(x, y, oReglava)) {
+    in_contact_with_spikes_lava = false;
+}
+
 if(!visible) return 0;
 
 // Male or Female

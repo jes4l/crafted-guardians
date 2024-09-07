@@ -11,5 +11,3 @@ if (instance_number(oEnemy) <= 0 && spawn_count_enemy >= spawn_amount_enemy) {
     }
 }
 alarm[2] = room_speed * 3;
-
-

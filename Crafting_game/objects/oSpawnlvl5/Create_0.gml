@@ -1,9 +1,8 @@
 // Create event
 alarm[0] = 1;
-alarm[1] = room_speed * 2;
+alarm[1] = room_speed * 3;
 alarm[2] = room_speed * 3;
-alarm[3] = room_speed * 5;
-
+alarm[3] = room_speed * 3;
 
 // oEnemyGhost
 global.hp_ghost = 35;

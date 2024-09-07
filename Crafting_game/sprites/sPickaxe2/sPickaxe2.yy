@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sPickaxe2",
   "bboxMode":0,
-  "bbox_bottom":11,
+  "bbox_bottom":12,
   "bbox_left":3,
   "bbox_right":12,
   "bbox_top":3,

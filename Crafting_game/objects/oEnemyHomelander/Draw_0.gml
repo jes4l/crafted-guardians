@@ -29,15 +29,28 @@ draw_set_color(-1);
 if(mouseOver(x, y, sprite_width, sprite_height))
     draw_circle(x, y, range, true);
 
-// Find the nearest tower (either oTower1, oTower2, oTower3, or oTower4)
+// Find the nearest tower (either oTower1, oTower2, oTower3, oTower4, or oTower5)
 var tw1 = instance_nearest(x, y, oTower1);
 var tw2 = instance_nearest(x, y, oTower2);
 var tw3 = instance_nearest(x, y, oTower3);
 var tw4 = instance_nearest(x, y, oTower4);
+var tw5 = instance_nearest(x, y, oTower5);
 var tw = noone;
 
 // Determine which tower is closest
-if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone) {
+if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone && tw5 != noone) {
+    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw3.x, tw3.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw4.x, tw4.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw1;
+    } else if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw3.x, tw3.y) && point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw4.x, tw4.y) && point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw2;
+    } else if (point_distance(x, y, tw3.x, tw3.y) < point_distance(x, y, tw4.x, tw4.y) && point_distance(x, y, tw3.x, tw3.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw3;
+    } else if (point_distance(x, y, tw4.x, tw4.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw4;
+    } else {
+        tw = tw5;
+    }
+} else if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone) {
     if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw2.x, tw2.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw3.x, tw3.y) && point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw1;
     } else if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw3.x, tw3.y) && point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw4.x, tw4.y)) {
@@ -97,6 +110,12 @@ if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone) {
     } else {
         tw = tw4;
     }
+} else if (tw1 != noone && tw5 != noone) {
+    if (point_distance(x, y, tw1.x, tw1.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw1;
+    } else {
+        tw = tw5;
+    }
 } else if (tw2 != noone && tw3 != noone) {
     if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw3.x, tw3.y)) {
         tw = tw2;
@@ -109,11 +128,29 @@ if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone) {
     } else {
         tw = tw4;
     }
+} else if (tw2 != noone && tw5 != noone) {
+    if (point_distance(x, y, tw2.x, tw2.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw2;
+    } else {
+        tw = tw5;
+    }
 } else if (tw3 != noone && tw4 != noone) {
     if (point_distance(x, y, tw3.x, tw3.y) < point_distance(x, y, tw4.x, tw4.y)) {
         tw = tw3;
     } else {
         tw = tw4;
+    }
+} else if (tw3 != noone && tw5 != noone) {
+    if (point_distance(x, y, tw3.x, tw3.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw3;
+    } else {
+        tw = tw5;
+    }
+} else if (tw4 != noone && tw5 != noone) {
+    if (point_distance(x, y, tw4.x, tw4.y) < point_distance(x, y, tw5.x, tw5.y)) {
+        tw = tw4;
+    } else {
+        tw = tw5;
     }
 } else if (tw1 != noone) {
     tw = tw1;
@@ -123,6 +160,8 @@ if (tw1 != noone && tw2 != noone && tw3 != noone && tw4 != noone) {
     tw = tw3;
 } else if (tw4 != noone) {
     tw = tw4;
+} else if (tw5 != noone) {
+    tw = tw5;
 }
 
 // Shooting logic
@@ -143,11 +182,6 @@ if (tw != noone) {
         objectToShoot = noone;
     }
 }
-
-
-
-
-
 
 
 
