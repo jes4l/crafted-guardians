@@ -55,3 +55,13 @@ scr_shield_functions();
 
 // Spikes
 in_contact_with_spikes_lava = false;
+
+
+// health:
+if (!variable_global_exists("global.purchaseCount")) {
+    global.purchaseCount = 0;
+}
+
+if (!variable_global_exists("global.purchaseCountLife")) {
+    global.purchaseCountLife = 0;
+}

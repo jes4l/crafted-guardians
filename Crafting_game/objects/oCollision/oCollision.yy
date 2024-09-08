@@ -18,7 +18,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Walls",
-    "path":"folders/Objects/World/Walls.yy",
+    "path":"folders/Objects/Walls.yy",
   },
   "parentObjectId":null,
   "persistent":false,

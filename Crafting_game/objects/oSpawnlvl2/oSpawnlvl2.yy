@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Spawning",
-    "path":"folders/Objects/TowerDefense/Spawning.yy",
+    "path":"folders/Objects/Spawning.yy",
   },
   "parentObjectId":null,
   "persistent":false,

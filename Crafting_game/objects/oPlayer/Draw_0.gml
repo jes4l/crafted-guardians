@@ -1,4 +1,6 @@
 // In oPlayer Draw event
+
+
 draw_self();
 
 if (message != "") {

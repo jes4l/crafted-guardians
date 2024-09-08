@@ -14,13 +14,14 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBulletEMP","path":"objects/oBulletEMP/oBulletEMP.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oLoss","path":"objects/oLoss/oLoss.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBulletGhost","path":"objects/oBulletGhost/oBulletGhost.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oCastle","path":"objects/oCastle/oCastle.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oGhost",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
-    "path":"folders/Objects/TowerDefense/Enemy.yy",
+    "path":"folders/Objects/Enemy.yy",
   },
   "parentObjectId":{
     "name":"oBreakableParent",

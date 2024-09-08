@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Bullet",
-    "path":"folders/Objects/TowerDefense/Bullet.yy",
+    "path":"folders/Objects/Bullet.yy",
   },
   "parentObjectId":null,
   "persistent":false,

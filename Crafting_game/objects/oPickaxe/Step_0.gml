@@ -15,24 +15,29 @@ with (_breakable) {
     if (_dist < other.breakDistance) {
         // Check line of sight
         if (!collision_line(oPlayer.x, oPlayer.y, x, y, oCollision, false, true)) {
+            // Check if the breakable object is oCastle
+            if (object_index == oCastle) {
+                show_debug_message("oCastle cannot be broken by oPickaxe.");
+                return; // Exit if the object is oCastle
+            }
+            
             // set selected
             other.selectorInst = id;
             
             // click
             if (other.cooldown == 0 && _mousePress) {
-            
-            // reduce hp
-            hp --;
-            
-            // Set rotation
-            other.rotations = -80;
-            
-            // set Cool down
-            other.cooldown = 20;
+                // reduce hp
+                hp--;
+                
+                // Set rotation
+                other.rotations = -80;
+                
+                // set Cool down
+                other.cooldown = 20;
             }
         }
     }
 }
 
 // cooldown
-if (cooldown > 0) cooldown --;
+if (cooldown > 0) cooldown--;

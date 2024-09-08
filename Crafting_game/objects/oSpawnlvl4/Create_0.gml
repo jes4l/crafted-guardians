@@ -28,3 +28,8 @@ boss_spawned = false;
 
 // Countdown
 global.countdown = 3;
+
+
+
+
+global.all_enemies_spawned = false;

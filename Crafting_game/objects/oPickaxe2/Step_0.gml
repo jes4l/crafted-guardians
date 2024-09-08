@@ -44,6 +44,12 @@ with (_breakable) {
     if (_dist < other.breakDistance) {
         // Check line of sight
         if (!collision_line(oPlayer.x, oPlayer.y, x, y, oCollision, false, true)) {
+            // Check if the breakable object is oCastle and if all enemies are spawned
+            if (object_index == oCastle && !global.all_enemies_spawned) {
+                show_debug_message("oCastle is not breakable yet.");
+                return; // Exit if oCastle is not breakable yet
+            }
+            
             // set selected
             other.selectorInst = id;
             

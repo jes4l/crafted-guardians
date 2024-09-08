@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Tower1",
-    "path":"folders/Objects/TowerDefense/Tower/Tower1.yy",
+    "path":"folders/Objects/Tower/Tower1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

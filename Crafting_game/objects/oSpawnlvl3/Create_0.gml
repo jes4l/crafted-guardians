@@ -37,3 +37,5 @@ pheonix_spawned = false;
 
 // Countdown
 global.countdown = 5;
+
+global.all_enemies_spawned = false;

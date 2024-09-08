@@ -5,6 +5,7 @@ alarm[0] = 1;
 alarm[1] = room_speed * 5;
 
 // Game
+global.life_max = 3;
 global.level = 1;
 global.life = 3;
 global.coins = 1000; 
@@ -29,3 +30,6 @@ spawn_rate_boss = 1 * room_speed;
 // Countdown
 global.countdown = 10;
 boss_spawned = false;
+
+
+global.all_enemies_spawned = false;

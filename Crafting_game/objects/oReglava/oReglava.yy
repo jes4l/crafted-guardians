@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"LossTile",
-    "path":"folders/Objects/TowerDefense/LossTile.yy",
+    "path":"folders/Objects/LossTile.yy",
   },
   "parentObjectId":null,
   "persistent":false,

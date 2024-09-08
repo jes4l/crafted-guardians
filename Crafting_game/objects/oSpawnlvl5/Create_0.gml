@@ -44,3 +44,9 @@ global.countdown = 3;
 // repeat
 repeat_sequence = 0;
 max_repeats = 1;
+
+
+
+global.all_enemies_spawned = false;
+
+

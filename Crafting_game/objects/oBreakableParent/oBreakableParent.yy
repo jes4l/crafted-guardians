@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Ground",
-    "path":"folders/Objects/World/Ground.yy",
+    "path":"folders/Objects/Ground.yy",
   },
   "parentObjectId":{
     "name":"oCollision",
