@@ -1,53 +1,48 @@
-
 // Draw Event
-// Set drawing color to grey for the background of the input box
 draw_set_color(c_gray);
-
-// Draw the filled rectangle (background) for the input box
-draw_rectangle(x1, y1, x2, y2, false);  // Change "false" to "true" to make it filled
-
-// Set drawing color to white for the outline and text
+draw_rectangle(x1, y1, x2, y2, false);
 draw_set_color(c_white);
+draw_rectangle(x1, y1, x2, y2, true);
+draw_set_font(fntGUI_small);
 
-// Draw the outline of the input box
-draw_rectangle(x1, y1, x2, y2, true);  // Draw an outline rectangle for the input box background
+// Draw the top middle text
+var top_text = "Enter your Name and Click the Egg to Hatch It!";
+var top_text_width = string_width(top_text);
+var top_text_x = (room_width - top_text_width) / 2;
+draw_text(top_text_x, 50, top_text);
 
-// Set the font to fntGUI_smallest
-draw_set_font(fntGUI_largest);
-
-// Draw the text (input + cursor)
 var display_text = global.name;
 if (writable) {
-    display_text += cursor;  // Add the cursor if the box is writable
+    display_text += cursor;
 }
 
-// If the user hasn't started typing, show placeholder text
+// Calculate the width of the text
+var text_width = string_width(display_text);
+
+// Calculate the starting x position to center the text
+var start_x = (x1 + x2) / 2 - text_width / 2;
+
 if (string_length(global.name) == 0 && !writable) {
     draw_set_color(c_white);
-    draw_text(x1 + 10, y1 + 10, "Enter your name...");  // Placeholder text
+    draw_text(x1 + 1, y1 + 4, " Enter Name");  // Keep "Enter Name" in its original position
 } else {
-    // Draw the actual text and cursor if the user has started typing
-    draw_text(x1 + 10, y1 + 10, display_text);  
+    draw_text(start_x, y1 + 4, display_text);  // Center the entered text
 }
 
-// Draw the error message if needed
 if (error_message != "") {
-    draw_text(x1 + 10, y2 + 20, error_message);  // Display error message below the box
+    draw_text(x1, y2 + 6, error_message);
 }
 
-// Draw the invalid character message if needed
 if (invalid_char_message != "") {
-    draw_text(x1 + 10, y2 + 40, invalid_char_message);  // Display invalid character message below the box
+    draw_text(x1, y2 + 6, invalid_char_message);
 }
 
-// Reset the font to the original (default) font
-draw_set_font(-1);  // -1 resets to the default font
+draw_set_font(-1);
 
-// Change the mouse cursor depending on the position
 if (point_in_rectangle(mouse_x, mouse_y, x1, y1, x2, y2)) {
-    window_set_cursor(cr_beam);  // Change to text cursor when hovering over the box
+    window_set_cursor(cr_beam);
 } else {
-    window_set_cursor(cr_default);  // Default cursor when outside the box
+    window_set_cursor(cr_default);
 }
-// Reset drawing color to default
-draw_set_color(-1);  // Or whatever default color your game uses
+
+draw_set_color(-1);

@@ -1,6 +1,6 @@
 draw_self();
 
-draw_set_font(fntGUI_largest);
+draw_set_font(fntGUI_smallest);
 
 draw_set_color(c_black);
 

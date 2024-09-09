@@ -10,8 +10,8 @@
   "name":"oTextBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Start Screen",
+    "path":"folders/Objects/Start Screen.yy",
   },
   "parentObjectId":null,
   "persistent":false,
