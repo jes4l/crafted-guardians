@@ -7,3 +7,4 @@ if (instance_number(oE1) == 0 && instance_number(oE2) == 0 && instance_number(oE
     // Go to the rmBegin room
     room_goto(rmPlayer);
 }
+// Start the path for all instances of oE1

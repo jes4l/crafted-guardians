@@ -1,2 +1,8 @@
-path_start(Path5, 1.4, path_action_restart, true);
-audio_play_sound(snd_AmberSwarbrickAHHHHH, 1, false);
+hp = 1
+max_hp = 1
+
+range = 100;
+fire_rate = room_speed / 3;
+shooting = false;
+objectToShoot = noone;
+

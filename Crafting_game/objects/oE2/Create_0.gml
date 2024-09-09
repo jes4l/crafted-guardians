@@ -1,2 +1,8 @@
-path_start(Path4, 1.2, path_action_restart, true);
-audio_play_sound(snd_TonyClarkHades, 1, false);
+hp = 1
+max_hp = 1
+
+range = 120;
+fire_rate = room_speed / 5;
+shooting = false;
+objectToShoot = noone;
+
