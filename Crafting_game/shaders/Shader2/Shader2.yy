@@ -3,8 +3,8 @@
   "%Name":"Shader2",
   "name":"Shader2",
   "parent":{
-    "name":"Crafting_game",
-    "path":"Crafting_game.yyp",
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

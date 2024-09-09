@@ -130,6 +130,7 @@
     {"id":{"name":"oStartMessage","path":"objects/oStartMessage/oStartMessage.yy",},},
     {"id":{"name":"oStone","path":"objects/oStone/oStone.yy",},},
     {"id":{"name":"oStoneSlab","path":"objects/oStoneSlab/oStoneSlab.yy",},},
+    {"id":{"name":"oTextBox","path":"objects/oTextBox/oTextBox.yy",},},
     {"id":{"name":"oTitanium","path":"objects/oTitanium/oTitanium.yy",},},
     {"id":{"name":"oTitaniumRaw","path":"objects/oTitaniumRaw/oTitaniumRaw.yy",},},
     {"id":{"name":"oTitaniumRawSmall","path":"objects/oTitaniumRawSmall/oTitaniumRawSmall.yy",},},
@@ -158,6 +159,7 @@
     {"id":{"name":"rmEnd","path":"rooms/rmEnd/rmEnd.yy",},},
     {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
+    {"id":{"name":"rmPlayer","path":"rooms/rmPlayer/rmPlayer.yy",},},
     {"id":{"name":"CollisionScript","path":"scripts/CollisionScript/CollisionScript.yy",},},
     {"id":{"name":"CostDisplay","path":"scripts/CostDisplay/CostDisplay.yy",},},
     {"id":{"name":"find_nearest_enemies_arc","path":"scripts/find_nearest_enemies_arc/find_nearest_enemies_arc.yy",},},
@@ -259,6 +261,7 @@
     {"roomId":{"name":"rmBegin","path":"rooms/rmBegin/rmBegin.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
     {"roomId":{"name":"rmEnd","path":"rooms/rmEnd/rmEnd.yy",},},
+    {"roomId":{"name":"rmPlayer","path":"rooms/rmPlayer/rmPlayer.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
