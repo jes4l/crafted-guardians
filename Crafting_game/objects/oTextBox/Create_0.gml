@@ -1,3 +1,4 @@
+// Create Event
 
 // Define smaller rectangle coordinates for the input box
 x1 = room_width / 2 - 350;
@@ -15,3 +16,7 @@ cursor_blink_speed = 30;  // Blinking interval (in frames)
 error_message = "";  // Error message for character limit
 error_timer = 0;  // Timer for error message display
 error_display_duration = 120;  // Duration for error message display in frames (2 seconds)
+invalid_char_message = "";  // Error message for invalid characters
+invalid_char_timer = 0;  // Timer for invalid character message display
+invalid_char_display_duration = 120;  // Duration for invalid character message display in frames (2 seconds)
+invalid_char_detected = false;  // Flag to track if an invalid character has been detected

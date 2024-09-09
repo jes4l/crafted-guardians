@@ -1,3 +1,5 @@
+
+// Draw Event
 // Set drawing color to grey for the background of the input box
 draw_set_color(c_gray);
 
@@ -31,6 +33,11 @@ if (string_length(global.name) == 0 && !writable) {
 // Draw the error message if needed
 if (error_message != "") {
     draw_text(x1 + 10, y2 + 20, error_message);  // Display error message below the box
+}
+
+// Draw the invalid character message if needed
+if (invalid_char_message != "") {
+    draw_text(x1 + 10, y2 + 40, invalid_char_message);  // Display invalid character message below the box
 }
 
 // Reset the font to the original (default) font
