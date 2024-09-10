@@ -35,6 +35,7 @@
     {"$GMFolder":"","%Name":"EMP","folderPath":"folders/Objects/EMP.yy","name":"EMP","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemy","folderPath":"folders/Objects/Enemy.yy","name":"Enemy","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Ground","folderPath":"folders/Objects/Ground.yy","name":"Ground","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Database","folderPath":"folders/Objects/Database.yy","name":"Database","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"LossTile","folderPath":"folders/Objects/LossTile.yy","name":"LossTile","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Materials","folderPath":"folders/Objects/Materials.yy","name":"Materials","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -377,7 +378,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
-    {"roomId":{"name":"rmScore","path":"rooms/rmScore/rmScore.yy",},},
     {"roomId":{"name":"rmBegin","path":"rooms/rmBegin/rmBegin.yy",},},
     {"roomId":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
@@ -386,6 +386,7 @@
     {"roomId":{"name":"rminstructions","path":"rooms/rminstructions/rminstructions.yy",},},
     {"roomId":{"name":"rmWin","path":"rooms/rmWin/rmWin.yy",},},
     {"roomId":{"name":"Room_FirebaseFirestore","path":"rooms/Room_FirebaseFirestore/Room_FirebaseFirestore.yy",},},
+    {"roomId":{"name":"rmScore","path":"rooms/rmScore/rmScore.yy",},},
     {"roomId":{"name":"Room_FirebaseFirestore_Query","path":"rooms/Room_FirebaseFirestore_Query/Room_FirebaseFirestore_Query.yy",},},
   ],
   "templateType":"game",

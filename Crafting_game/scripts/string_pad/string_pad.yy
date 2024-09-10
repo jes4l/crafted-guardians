@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"string_pad",
   "parent":{
-    "name":"Crafting_game",
-    "path":"Crafting_game.yyp",
+    "name":"Database",
+    "path":"folders/Objects/Database.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

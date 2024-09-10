@@ -9,6 +9,15 @@ var coin_height = sprite_get_height(sCoin);
 coin_x += coin_width / 2;
 coin_y += coin_height / 2;
 
+// Move the name slightly to the right and slightly lower
+var name_x = coin_x + - 8; // Adjust this value to move right
+var name_y = coin_y - coin_height + 212; // Adjust this value to move lower
+
+// Draw global.name on top of the coins with reduced scale
+draw_set_color(c_black);
+draw_text_transformed(name_x, name_y, string(global.name), 0.5, 0.5, 0);
+draw_set_color(c_white);
+
 draw_set_color(c_black);
 draw_sprite(sCoin, 0, coin_x, coin_y);
 draw_text(coin_text_x, coin_y - coin_height / 2, string(global.coins));

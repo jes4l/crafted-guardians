@@ -11,8 +11,8 @@
   "name":"obj_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Crafting_game",
-    "path":"Crafting_game.yyp",
+    "name":"Database",
+    "path":"folders/Objects/Database.yy",
   },
   "parentObjectId":null,
   "persistent":false,
