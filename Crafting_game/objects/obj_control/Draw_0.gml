@@ -1,20 +1,43 @@
 //draw event:
 // Set up margin and starting position
 var margin = 16;
-var box_width = 200; // Width of the leaderboard box
-var box_height = 200; // Height of the leaderboard box
+var box_width = 500; // Increased width of the leaderboard box
+var box_height = 400; // Height of the leaderboard box
 var box_x = room_width - box_width - margin; // X position of the box
 var box_y = (room_height - box_height) / 2; // Y position of the box to center it vertically
 
 // Draw the leaderboard box
 draw_set_color(c_black);
+draw_set_font(fntG);
 draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, false);
 draw_set_color(c_white);
 draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, true);
 
-// Set fixed width for 10-character name
-var column_name_width = string_width("X") * 6; // Further reduced width for the name column
-var column_score_width = string_width("Score") * 0.6; // Further reduced width for the score column
+// Calculate the maximum width required for the name, lvl, and coins columns
+var max_name_width = string_width("Name");
+var max_lvl_width = string_width("Level");
+var max_coins_width = string_width("Coins");
+
+if data != -1 {
+    for (var i = 0; i < array_length(data); i++) {
+        var _doc = data[i];
+        var name_width = string_width(_doc.name);
+        var lvl_width = string_width(_doc.lvl);
+        var coins_width = string_width(string(_doc.coins));
+        
+        if (name_width > max_name_width) {
+            max_name_width = name_width;
+        }
+        
+        if (lvl_width > max_lvl_width) {
+            max_lvl_width = lvl_width;
+        }
+        
+        if (coins_width > max_coins_width) {
+            max_coins_width = coins_width;
+        }
+    }
+}
 
 // Scaling factor for the text
 var scale_factor = 0.75;
@@ -22,31 +45,26 @@ var scale_factor = 0.75;
 // Draw the leaderboard title
 draw_text_transformed(box_x + margin, box_y + margin, "Leaderboard:", scale_factor, scale_factor, 0);
 
-// Draw the table header (Name | Score)
-draw_text_transformed(box_x + margin, box_y + margin + 16, "Name" + string_pad("", column_name_width - string_width("Name")) + " | Score", scale_factor, scale_factor, 0);
+// Draw the table header (Name | Level | Coins)
+var header_y = box_y + margin + 32; // Increased gap between title and header
+draw_text_transformed(box_x + margin, header_y, "Name", scale_factor, scale_factor, 0);
+draw_text_transformed(box_x + margin + max_name_width + margin, header_y, "Level", scale_factor, scale_factor, 0);
+draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, header_y, "Coins", scale_factor, scale_factor, 0);
 
-// Iterate through the high scores
+// Draw the table rows
 if data != -1 {
-    for (var i = 0; i < array_length(data); i++) {
+    for (var i = 0; i < array_length(data) && i < 10; i++) { // Limit to 10 entries
         var _doc = data[i];
         
-        // Ensure the name fits within 6 characters
-        var display_name = string_copy(_doc.name, 1, 6);
-
-        // Pad the name to align with the score column
-        display_name += string_pad("", column_name_width - string_width(display_name));
-
-        // Format the score with proper spacing
-        var display_score = string(_doc.score);
-        display_score += string_pad("", column_score_width - string_width(display_score));
-
         // Calculate the Y position for the current row
-        var row_y = box_y + margin + 32 + (16 * i);
+        var row_y = header_y + 32 + (24 * i); // Increased space between rows
 
         // Check if the row is within the bounds of the box
         if (row_y + 16 < box_y + box_height) {
-            // Draw the row: "Name | Score"
-            draw_text_transformed(box_x + margin, row_y, display_name + " | " + display_score, scale_factor, scale_factor, 0);
+            // Draw the name, level, and coins cells
+            draw_text_transformed(box_x + margin, row_y, _doc.name, scale_factor, scale_factor, 0);
+            draw_text_transformed(box_x + margin + max_name_width + margin, row_y, _doc.lvl, scale_factor, scale_factor, 0);
+            draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, row_y, string(_doc.coins), scale_factor, scale_factor, 0);
         } else {
             // Stop drawing if the row goes outside the box
             break;
@@ -54,5 +72,5 @@ if data != -1 {
     }
 } else {
     // If data is still loading, show a loading message
-    draw_text_transformed(box_x + margin, box_y + margin + 32, "Loading...", scale_factor, scale_factor, 0);
+    draw_text_transformed(box_x + margin, header_y + 32, "Loading...", scale_factor, scale_factor, 0);
 }

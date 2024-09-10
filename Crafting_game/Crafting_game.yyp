@@ -71,12 +71,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Crafting_game",
   "resources":[
     {"id":{"name":"FirebaseSetup","path":"extensions/FirebaseSetup/FirebaseSetup.yy",},},
     {"id":{"name":"YYFirebaseFirestore","path":"extensions/YYFirebaseFirestore/YYFirebaseFirestore.yy",},},
+    {"id":{"name":"fntG","path":"fonts/fntG/fntG.yy",},},
     {"id":{"name":"fntGUI_large","path":"fonts/fntGUI_large/fntGUI_large.yy",},},
     {"id":{"name":"fntGUI_largest","path":"fonts/fntGUI_largest/fntGUI_largest.yy",},},
     {"id":{"name":"fntGUI_small","path":"fonts/fntGUI_small/fntGUI_small.yy",},},

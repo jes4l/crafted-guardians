@@ -57,6 +57,7 @@
   "ResourceOrderSettings":[
     {"name":"FirebaseSetup","order":19,"path":"extensions/FirebaseSetup/FirebaseSetup.yy",},
     {"name":"YYFirebaseFirestore","order":2,"path":"extensions/YYFirebaseFirestore/YYFirebaseFirestore.yy",},
+    {"name":"fntG","order":5,"path":"fonts/fntG/fntG.yy",},
     {"name":"fntGUI_large","order":1,"path":"fonts/fntGUI_large/fntGUI_large.yy",},
     {"name":"fntGUI_largest","order":3,"path":"fonts/fntGUI_largest/fntGUI_largest.yy",},
     {"name":"fntGUI_small","order":2,"path":"fonts/fntGUI_small/fntGUI_small.yy",},
