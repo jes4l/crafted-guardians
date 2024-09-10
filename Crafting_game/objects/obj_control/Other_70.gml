@@ -1,4 +1,4 @@
-/// @desc Async event
+// Async Social Event
 if async_load[? "status"] == 200 {
     switch (async_load[? "type"]) {
         case "FirebaseFirestore_Collection_Listener":
