@@ -11,8 +11,8 @@
   "name":"obj_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Notes",
-    "path":"folders/Notes.yy",
+    "name":"Crafting_game",
+    "path":"Crafting_game.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,5 +1,7 @@
 /// @desc Create listener
 
+
+
 root = "highscores";
 listener = FirebaseFirestore(root).Listener();
 

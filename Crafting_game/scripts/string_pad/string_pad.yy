@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"string_pad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"string_pad",
+  "parent":{
+    "name":"Crafting_game",
+    "path":"Crafting_game.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -278,6 +278,7 @@
     {"id":{"name":"LossTile","path":"scripts/LossTile/LossTile.yy",},},
     {"id":{"name":"mouseOver","path":"scripts/mouseOver/mouseOver.yy",},},
     {"id":{"name":"scr_shield_functions","path":"scripts/scr_shield_functions/scr_shield_functions.yy",},},
+    {"id":{"name":"string_pad","path":"scripts/string_pad/string_pad.yy",},},
     {"id":{"name":"telePart","path":"scripts/telePart/telePart.yy",},},
     {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},},
     {"id":{"name":"Shader2","path":"shaders/Shader2/Shader2.yy",},},
@@ -374,8 +375,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rmScore","path":"rooms/rmScore/rmScore.yy",},},
     {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
+    {"roomId":{"name":"rmScore","path":"rooms/rmScore/rmScore.yy",},},
     {"roomId":{"name":"rmBegin","path":"rooms/rmBegin/rmBegin.yy",},},
     {"roomId":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
