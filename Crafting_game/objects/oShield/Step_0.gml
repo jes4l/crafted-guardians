@@ -1,9 +1,11 @@
 // Rotate the shield when the "I" or "J" key is pressed
 if (keyboard_check(ord("Q"))) {
     shieldRotation -= 4; // Adjust the rotation speed as needed
+	audio_play_sound(snd_water, 1, false);
 }
 if (keyboard_check(ord("R"))) {
     shieldRotation += 4; // Adjust the rotation speed as needed
+	audio_play_sound(snd_water, 1, false);
 }
 
 // Keep the shield rotation within 0-360 degrees

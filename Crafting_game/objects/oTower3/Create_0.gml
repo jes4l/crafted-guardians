@@ -5,3 +5,5 @@ objectToShoot = noone;
 hp = 500;
 max_hp = hp;
 bullet_active = false;
+
+audio_play_sound(snd_build, 1, false);

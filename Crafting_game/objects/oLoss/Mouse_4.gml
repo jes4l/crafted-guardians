@@ -19,7 +19,7 @@ if (_dist < other.breakDistance) {
         global.inventory[# 4, 0] -= cost_lightning;
         global.inventory[# 5, 0] -= cost_water;
         global.coins -= cost_coin;	
-
+		audio_play_sound(snd_gate, 1, false);
         global.level++;
         instance_destroy();
     } else {

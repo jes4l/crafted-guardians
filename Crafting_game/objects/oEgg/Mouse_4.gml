@@ -1,6 +1,6 @@
 // Increment the image index
 image_index += 1;
-
+audio_play_sound(snd_egg, 1, false);
 // Check if the frame is at the maximum (6)
 if (image_index >= 8) {
     // Destroy the egg object

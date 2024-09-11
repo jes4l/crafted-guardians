@@ -31,6 +31,8 @@ if (_dist < other.breakDistance) {
                 
                 // Activate the shield
                 activateShield();
+				audio_play_sound(snd_finance, 1, false);
+				
             }
 			
         } else {

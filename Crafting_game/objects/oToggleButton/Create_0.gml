@@ -1,3 +1,6 @@
+// In the Room Creation Code or an event that triggers when entering the room
+audio_stop_sound(snd_fire);
+
 // Create Event
 button_state = "Male";  // Initial state
 global.playerGender = "male";  // Default gender

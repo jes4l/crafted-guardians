@@ -149,6 +149,7 @@ if (mouse_check_button_pressed(mb_left)) {
             if (i == 6) { // Check if the clicked slot is the spikes slot
                 if (global.inventory[# 6, 0] > 0) { // Check if the quantity is greater than 0
                     instance_create_depth(mouse_x, mouse_y, -9, oSpikes1D);
+					audio_play_sound(snd_finance, 1, false);
                     global.inventory[# 6, 0] -= 1; // Decrement the quantity
                 } else {
                     // Set error message on oPlayer
@@ -159,6 +160,7 @@ if (mouse_check_button_pressed(mb_left)) {
             } else if (i == 7) { // Check if the clicked slot is the bomb slot
                 if (global.inventory[# 7, 0] > 0) { // Check if the quantity is greater than 0
                     instance_create_depth(mouse_x, mouse_y, -9, oBomb1D);
+					audio_play_sound(snd_finance, 1, false);
                     global.inventory[# 7, 0] -= 1; // Decrement the quantity
                 } else {
                     // Set error message on oPlayer
@@ -169,6 +171,7 @@ if (mouse_check_button_pressed(mb_left)) {
             } else if (i == 8) { // Check if the clicked slot is the EMP slot
                 if (global.inventory[# 8, 0] > 0) { // Check if the quantity is greater than 0
                     instance_create_depth(mouse_x, mouse_y, -9, oEMP1D);
+					audio_play_sound(snd_finance, 1, false);
                     global.inventory[# 8, 0] -= 1; // Decrement the quantity
                 } else {
                     // Set error message on oPlayer

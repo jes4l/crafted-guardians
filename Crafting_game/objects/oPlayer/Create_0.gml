@@ -32,7 +32,7 @@ show_debug_message("Player Created: " + string(global.playerGender));
 message = "";
 alarm[0] = -1; // Initialize the alarm
 
-/*
+
 //Test case
 global.inventory[# 0, 0] += 99;
 global.inventory[# 1, 0] += 99;
@@ -44,7 +44,7 @@ global.inventory[# 6, 0] += 99;
 global.inventory[# 7, 0] += 99;
 global.inventory[# 8, 0] += 99;
 //coins are in oSpawn 
-*/
+
 
 // Initialize shield state
 global.shieldActive = false;

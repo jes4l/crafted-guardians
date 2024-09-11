@@ -29,11 +29,13 @@ if (writable) {
         error_timer = error_display_duration;
         invalid_char_message = "";  // Clear invalid character message
         invalid_char_timer = 0;     // Reset invalid character timer
+		audio_play_sound(snd_button, 1, false);
         show_debug_message("Character limit reached. Error message set.");
     }
     
     if (new_invalid_char_detected && !invalid_char_detected) {
         invalid_char_message = "Invalid character!";
+		audio_play_sound(snd_button, 1, false);
         invalid_char_timer = invalid_char_display_duration;
         error_message = "";  // Clear character limit message
         error_timer = 0;     // Reset character limit timer
@@ -66,11 +68,13 @@ if (mouse_check_button_pressed(mb_left)) {
     if (point_in_rectangle(mouse_x, mouse_y, x1, y1, x2, y2)) {
         writable = true;
         show_debug_message("Text box activated.");
+		audio_play_sound(snd_button, 1, false);
     } else {
         writable = false;
         if (string_length(global.name) == 0) {
             global.name = "Anonymous";
             show_debug_message("No name entered. Set to Anonymous.");
+			audio_play_sound(snd_button, 1, false);
         }
         show_debug_message("Text box deactivated.");
     }
@@ -94,5 +98,6 @@ if (invalid_char_timer > 0) {
     if (invalid_char_timer <= 0) {
         invalid_char_message = "";
         show_debug_message("Invalid character message hidden.");
+		audio_play_sound(snd_button, 1, false);
     }
 }
