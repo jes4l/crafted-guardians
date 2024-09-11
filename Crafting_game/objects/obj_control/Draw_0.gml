@@ -5,7 +5,9 @@ var box_height = 400;
 var box_x = room_width - box_width - margin;
 var box_y = (room_height - box_height) / 2;
 
-draw_set_color(c_black);
+// Set box color and outline
+var box_color = make_color_rgb(92, 153, 45);
+draw_set_color(box_color);
 draw_set_font(fntG);
 draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, false);
 draw_set_color(c_white);
@@ -50,7 +52,17 @@ if data != -1 {
         var _doc = data[i];
         var row_y = header_y + 32 + (24 * i);
 
+        // Check if the current player is in the leaderboard
+        var is_current_player = (_doc.name == global.name && _doc.lvl == global.level && _doc.coins == global.coins);
+
         if (row_y + 16 < box_y + box_height) {
+            // Set text color based on whether the current player is in the leaderboard
+            if (is_current_player) {
+                draw_set_color(c_black);
+            } else {
+                draw_set_color(c_white);
+            }
+
             draw_text_transformed(box_x + margin, row_y, _doc.name, scale_factor, scale_factor, 0);
             draw_text_transformed(box_x + margin + max_name_width + margin, row_y, _doc.lvl, scale_factor, scale_factor, 0);
             draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, row_y, string(_doc.coins), scale_factor, scale_factor, 0);
