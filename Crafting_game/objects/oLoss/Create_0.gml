@@ -1,6 +1,9 @@
 
 timer = 0;
 
+// Create Event of the relevant object
+global.coins_before_conversion = 0;
+
 
 cost_wood = 0;
 cost_stone = 0;

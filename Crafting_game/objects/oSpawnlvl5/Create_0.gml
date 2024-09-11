@@ -6,7 +6,7 @@ alarm[3] = room_speed * 3;
 
 // oEnemyGhost
 global.hp_ghost = 35;
-global.spd_ghost = 2;
+global.spd_ghost = 1.5;
 spawn_amount_ghost = 1;
 spawn_count_ghost = 0;
 spawn_rate_ghost = 1 * room_speed;

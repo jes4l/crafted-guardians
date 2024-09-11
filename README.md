@@ -4,14 +4,8 @@
 
 ### Tasks
 
-- Game Complete
+- New Update in the Near Future = More Levels and Easter Eggs :)
 
-- Need to test
-
-- end screen edit loss and win - not started
-
-- start screen edit - not started
-
-- sound - not started
+- Amazing Game, It was Fun Making it!
 
  

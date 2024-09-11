@@ -34,7 +34,7 @@ if (instance_number(oEnemyHomelander) <= 0 && spawn_count_homelander >= spawn_am
         
         // Send message to the player
         oPlayer.message = "Destroy the tower to vanquish the ghosts";
-        show_debug_message("Message set: " + oPlayer.message);
+		oPlayer.alarm[0] = room_speed * 3;
     }
 }
 alarm[3] = room_speed * 5;

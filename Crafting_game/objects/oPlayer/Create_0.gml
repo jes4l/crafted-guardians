@@ -1,3 +1,7 @@
+// Create Event of the relevant object
+global.coins_before_conversion = 0;
+
+timer = 0;
 // properties
 moveSpeed = 1;
 
