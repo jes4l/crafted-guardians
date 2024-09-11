@@ -10,7 +10,9 @@ var box_color = make_color_rgb(92, 153, 45);
 draw_set_color(box_color);
 draw_set_font(fntG);
 draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, false);
-draw_set_color(c_white);
+
+// Change the outline color to the same as the box color
+draw_set_color(box_color);
 draw_rectangle(box_x, box_y, box_x + box_width, box_y + box_height, true);
 
 var max_name_width = string_width("Name");
@@ -39,36 +41,45 @@ if data != -1 {
 }
 
 var scale_factor = 0.75;
-
+draw_set_color(c_white);
 draw_text_transformed(box_x + margin, box_y + margin, "Leaderboard:", scale_factor, scale_factor, 0);
-
+draw_set_color(-1);
 var header_y = box_y + margin + 32;
 draw_text_transformed(box_x + margin, header_y, "Name", scale_factor, scale_factor, 0);
 draw_text_transformed(box_x + margin + max_name_width + margin, header_y, "Level", scale_factor, scale_factor, 0);
 draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, header_y, "Coins", scale_factor, scale_factor, 0);
 
 if data != -1 {
+    var highest_timestamp = -1;
+    var highest_index = -1;
+
+    // Find the entry with the highest timestamp
+    for (var i = 0; i < array_length(data); i++) {
+        var _doc = data[i];
+        if (_doc.name == global.name && _doc.lvl == global.level && _doc.coins == global.coins) {
+            if (_doc.timestamp > highest_timestamp) {
+                highest_timestamp = _doc.timestamp;
+                highest_index = i;
+            }
+        }
+    }
+
     for (var i = 0; i < array_length(data) && i < 10; i++) {
         var _doc = data[i];
         var row_y = header_y + 32 + (24 * i);
 
-        // Check if the current player is in the leaderboard
+        // Set text color to white initially
+        draw_set_color(c_white);
+
+        // Check if the current player is in the leaderboard and has the highest timestamp
         var is_current_player = (_doc.name == global.name && _doc.lvl == global.level && _doc.coins == global.coins);
-
-        if (row_y + 16 < box_y + box_height) {
-            // Set text color based on whether the current player is in the leaderboard
-            if (is_current_player) {
-                draw_set_color(c_black);
-            } else {
-                draw_set_color(c_white);
-            }
-
-            draw_text_transformed(box_x + margin, row_y, _doc.name, scale_factor, scale_factor, 0);
-            draw_text_transformed(box_x + margin + max_name_width + margin, row_y, _doc.lvl, scale_factor, scale_factor, 0);
-            draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, row_y, string(_doc.coins), scale_factor, scale_factor, 0);
-        } else {
-            break;
+        if (is_current_player && i == highest_index) {
+            draw_set_color(c_black);
         }
+
+        draw_text_transformed(box_x + margin, row_y, _doc.name, scale_factor, scale_factor, 0);
+        draw_text_transformed(box_x + margin + max_name_width + margin, row_y, _doc.lvl, scale_factor, scale_factor, 0);
+        draw_text_transformed(box_x + margin + max_name_width + max_lvl_width + 2 * margin, row_y, string(_doc.coins), scale_factor, scale_factor, 0);
     }
 } else {
     draw_text_transformed(box_x + margin, header_y + 32, "Loading...", scale_factor, scale_factor, 0);
