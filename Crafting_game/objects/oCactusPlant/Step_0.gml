@@ -1,4 +1,6 @@
 if (hp <= 0) {
+	audio_play_sound(snd_tree, 1, false);
+	global.coins += 10;
     instance_destroy();
     
     var num_water;

@@ -8,7 +8,7 @@ fire_rate = room_speed / 5;
 shooting = false;
 objectToShoot = noone;
 
-audio_play_sound(snd_TonyClarkHades, 1, false);
+
 
 
 stored_position = 0;

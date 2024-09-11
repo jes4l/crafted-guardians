@@ -1,1 +1,1 @@
-cost_key = 2;
+cost_key = 7;

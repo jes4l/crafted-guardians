@@ -1,4 +1,5 @@
 if (hp <= 0) {
+	global.coins += 15;
     // Destroy the ghost
     instance_destroy();
     

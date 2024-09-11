@@ -1,4 +1,5 @@
 if (hp <= 0) {
+	audio_play_sound(snd_AmberSwarbrickAHHHHH, 1, false);
     instance_destroy();
 }
 

@@ -1,8 +1,8 @@
 // Rotate the shield when the "I" or "J" key is pressed
-if (keyboard_check(ord("I"))) {
+if (keyboard_check(ord("Q"))) {
     shieldRotation -= 4; // Adjust the rotation speed as needed
 }
-if (keyboard_check(ord("J"))) {
+if (keyboard_check(ord("R"))) {
     shieldRotation += 4; // Adjust the rotation speed as needed
 }
 

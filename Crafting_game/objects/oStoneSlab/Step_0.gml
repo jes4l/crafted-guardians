@@ -1,4 +1,6 @@
 if (hp <= 0) {
+	global.coins += 10;
+	audio_play_sound(snd_rock, 1, false);
     instance_destroy();
     
     var num_stone = 1;

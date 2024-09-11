@@ -22,6 +22,7 @@ if (_dist < other.breakDistance) {
                 if (global.life < global.life_max) {
                     // Update oPlayer's life by 1
                     global.life +=1;
+					audio_play_sound(snd_button, 1, false);
                     show_debug_message("Player Life updated : " + string(global.life));
                     
                     // Deduct the resources

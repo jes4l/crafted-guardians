@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.76,
+  "duration":0.84,
   "name":"snd_AmberSwarbrickAHHHHH",
   "parent":{
     "name":"Sounds",

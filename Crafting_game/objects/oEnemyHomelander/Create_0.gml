@@ -2,8 +2,8 @@ path_start(Path1, global.spd_homelander, 0, 1);
 hp = global.hp_homelander;
 max_hp = global.hp_homelander;
 
-range = 100;
-fire_rate = room_speed / 3;
+range = 130;
+fire_rate = room_speed / 3.2;
 shooting = false;
 objectToShoot = noone;
 

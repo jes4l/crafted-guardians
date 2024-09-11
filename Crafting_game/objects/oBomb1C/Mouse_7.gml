@@ -13,6 +13,7 @@ if (_dist < other.breakDistance) {
             global.inventory[# 5, 0] >= cost_water &&
             global.coins >= cost_coin) {
             instance_create_depth(mouse_x, mouse_y, -9, oBomb1D);
+			audio_play_sound(snd_finance, 1, false);
             // Deduct the resources
             global.inventory[# 0, 0] -= cost_key;
             global.inventory[# 1, 0] -= cost_wood;

@@ -28,6 +28,7 @@ with (_breakable) {
             if (other.cooldown == 0 && _mousePress) {
                 // reduce hp
                 hp--;
+				audio_play_sound(snd_axe, 1, false);
                 
                 // Set rotation
                 other.rotations = -80;

@@ -10,10 +10,10 @@ global.level = 1;
 global.life = 3;
 global.coins = 1000; 
 
-
+/*
 //test
 global.coins += 9000;
-
+*/
 
 // oEnemy
 global.hp = 50;

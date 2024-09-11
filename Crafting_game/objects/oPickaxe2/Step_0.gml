@@ -13,6 +13,7 @@ if (place_meeting(x, y, oPlayer)) {
         // Equip oPickaxe2
         _player.heldItem = id;
         show_debug_message("oPickaxe2 equipped.");
+		
         
         // Set breakDistance to 32 upon collision
         breakDistance = 32;
@@ -57,6 +58,7 @@ with (_breakable) {
             if (other.cooldown == 0 && _mousePress) {
                 // reduce hp
                 hp -= 7;
+				audio_play_sound(snd_axe, 1, false);
                 
                 // Set rotation
                 other.rotations = -80;

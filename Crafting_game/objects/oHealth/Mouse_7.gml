@@ -23,6 +23,7 @@ if (_dist < other.breakDistance) {
                     // Update oPlayer's HP to the maximum
                     oPlayer.hp = oPlayer.max_hp;
                     show_debug_message("Player HP updated to max: " + string(oPlayer.hp));
+					audio_play_sound(snd_finance, 1, false);
                     
                     // Deduct the resources
                     global.inventory[# 0, 0] -= cost_key;

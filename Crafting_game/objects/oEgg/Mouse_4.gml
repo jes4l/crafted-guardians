@@ -23,13 +23,13 @@ if (image_index >= 8) {
         instance_create_layer(x, y, "Instances_1", oE3);
 		with (oE3) {
 		path_start(Path5, 1.4, path_action_restart, true);
-		audio_play_sound(snd_AmberSwarbrickAHHHHH, 1, false);
+		audio_play_sound(snd_ghost_death, 1, false);
 	}
     } else if (image_index == 4) {
         instance_create_layer(x, y, "Instances_1", oE4);
 		with (oE4) {
 		path_start(Path6, 1.6, path_action_restart, true);
-		audio_play_sound(snd_TonyClarkHades, 1, false);
+		audio_play_sound(snd_screams_of_agony, 1, false);
 	}
     }
 }

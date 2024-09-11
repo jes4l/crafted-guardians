@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_screams_of_agony",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.008,
+  "name":"snd_screams_of_agony",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_screams_of_agony.mp3",
+  "type":0,
+  "volume":1.0,
+}

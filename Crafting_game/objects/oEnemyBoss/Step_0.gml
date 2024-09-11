@@ -1,4 +1,5 @@
 if (hp <= 0) {
+	audio_play_sound(snd_TonyClarkHades, 1, false);
     instance_destroy();
     instance_create_layer(x, y, "Instances", oKey);
     // Set message on oPlayer

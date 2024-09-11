@@ -1,4 +1,6 @@
 if (hp <= 0) {
+	global.coins += 10;
+	audio_play_sound(snd_bush, 1, false);
     instance_destroy();
     
     var unique_position = false;

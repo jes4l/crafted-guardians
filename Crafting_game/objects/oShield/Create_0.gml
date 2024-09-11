@@ -2,4 +2,4 @@
 shieldRotation = 0;
 
 // Initialize shield HP
-global.hp_shield = 100; // Set initial HP value
+global.hp_shield = 120; // Set initial HP value

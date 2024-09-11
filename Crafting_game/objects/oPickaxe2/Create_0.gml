@@ -15,3 +15,5 @@ selectorFrameNumber = sprite_get_number(sSelector);
 //flip disabled
 global.flipEnabled = false;
 image_angle = 180;
+
+global.coins += 20;
