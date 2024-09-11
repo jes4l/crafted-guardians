@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_water",
+  "%Name":"snd_castle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.056312,
-  "name":"snd_water",
+  "duration":2.04,
+  "name":"snd_castle",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_water.mp3",
+  "soundFile":"snd_castle.mp3",
   "type":0,
-  "volume":0.19,
+  "volume":1.0,
 }

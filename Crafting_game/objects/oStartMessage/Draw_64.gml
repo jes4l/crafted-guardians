@@ -22,7 +22,6 @@ draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 - 0, "Dest
 draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 10, "Find the Phoenix Pickaxe to destroy the castle", scale, scale, 0);
 draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 20, "At the final level, the floor is lava", scale, scale, 0);
 
-draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 30, "Ghosts", scale, scale, 0);
 draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 40, "The Green Ghost cannot shoot; every other ghost can", scale, scale, 0);
 draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 50, "The Red and Blue Ghosts can destroy Towers", scale, scale, 0);
 draw_text_transformed(left_half_width / 2 - offset, screen_height / 2 + 60, "Pink Ghosts can revive dead ghosts from previous levels and can target you", scale, scale, 0);

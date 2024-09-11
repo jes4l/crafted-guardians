@@ -1,3 +1,5 @@
+// In the Create event of oSpawn or a global initialization script
+global.message_set = false;
 // Create event
 alarm[0] = 1;
 alarm[1] = room_speed * 3;

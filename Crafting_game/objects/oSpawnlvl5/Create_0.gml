@@ -18,6 +18,8 @@ global.hp_enemy = 175;
 global.spd_enemy = 1.5;
 spawn_amount_enemy = 7;
 spawn_count_enemy = 0;
+// In the Create event of oSpawn or a global initialization script
+global.message_set = false;
 spawn_rate_enemy= 1 * room_speed;
 enemy_spawned = false;
 

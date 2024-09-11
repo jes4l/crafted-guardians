@@ -1,3 +1,5 @@
+// In the Create event of oSpawn or a global initialization script
+global.message_set = false;
 // Create event
 spawn_amount = 7;
 spawn_count = 0;

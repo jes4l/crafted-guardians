@@ -1,6 +1,6 @@
 if (instance_number(oGhost) <= 0 && spawn_count_ghost >= spawn_amount_ghost) {
     if (!enemy_spawned) {
-        oPlayer.message = "The enemy is here";
+        oPlayer.message = "The Green Ghost has Spawned";
         oPlayer.alarm[0] = room_speed * 3;
         show_debug_message("Message set: " + oPlayer.message);
         enemy_spawned = true;

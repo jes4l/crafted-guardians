@@ -1,6 +1,6 @@
 if (instance_number(oEnemy) <= 0 && spawn_count >= spawn_amount) {
     if (!homelander_spawned) {
-        oPlayer.message = "The HomeLander Has Landed";
+        oPlayer.message = "The Blue Ghost Has Spawned";
         oPlayer.alarm[0] = room_speed * 3;
         show_debug_message("Message set: " + oPlayer.message);
         homelander_spawned = true;

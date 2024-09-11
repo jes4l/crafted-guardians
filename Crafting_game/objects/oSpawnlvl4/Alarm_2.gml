@@ -1,7 +1,7 @@
 // Alarm2 event
 if (instance_number(oEnemyHomelander) <= 0 && spawn_count_homelander >= spawn_amount_homelander) {
     if (!boss_spawned) {
-        oPlayer.message = "The Boss Has Spawned";
+        oPlayer.message = "The Red Ghost Has Spawned";
         oPlayer.alarm[0] = room_speed * 3;
         show_debug_message("Message set: " + oPlayer.message);
         boss_spawned = true;

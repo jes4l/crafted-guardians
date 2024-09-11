@@ -6,8 +6,11 @@ if (global.countdown > 0) {
         instance_create_depth(x, y, -1, oGhost);
         spawn_count_ghost++;
     }
+    if (!global.message_set) {
+        oPlayer.message = "The Pink Ghost Has Spawned";
+        oPlayer.alarm[0] = room_speed * 1;
+        show_debug_message("Message set: " + oPlayer.message);
+        global.message_set = true;
+    }
 }
 alarm[0] = spawn_rate_ghost;
-
-
-
