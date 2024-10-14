@@ -13,8 +13,6 @@ Welcome to the **Crafting Tower Defense Game**, a GameMaker Studio 2 project bui
 - [Screenshots](#screenshots)
 - [How to Play](#how-to-play)
 - [Installation](#installation)
-- [Technology Used](#technology-used)
-- [Future Plans](#future-plans)
 
 ---
 
