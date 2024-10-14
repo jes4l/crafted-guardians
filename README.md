@@ -53,14 +53,14 @@ Welcome to the **Crafting Tower Defense Game**, a GameMaker Studio 2 project bui
 
 ## Screenshots
 
-### Game Start
-![Game Start](assets/1.png)
+### Character Selection - Boy
+![Character Selection - Boy](assets/1.png)
 
-### Character Selection (Boy)
-![Character Selection - Boy](assets/2.png)
+### Character Selection - Girl
+![Character Selection - Girl](assets/2.png)
 
-### Character Selection (Girl)
-![Character Selection - Girl](assets/3.png)
+### Instruction Page
+![Instruction Page](assets/3.png)
 
 ### Gameplay
 ![Gameplay](assets/4.png)
